@@ -1,0 +1,72 @@
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 125px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 11px;
+    z-index: 100;
+}
+a{
+    color: #8F9093;
+    text-decoration: none;
+}
+.selected{
+    color: #000;
+}
+.menu{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pages{
+    width: 100%;
+    min-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    z-index: 50;
+}
+.extras{
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+.extras>div{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.extras>div>div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.phoneNumber{
+    min-width: 130px;
+    font-size: 18px;
+}
+.contactButton{
+    width: 120px;
+    height: 50px;
+    background: var(--orange);
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+.languages{
+    color: var(--gray);
+    font-size: 18px;
+}
+.languages>p{
+    cursor: pointer;
+}
+.languages>p:last-child{
+    margin-left: 10px;
+}

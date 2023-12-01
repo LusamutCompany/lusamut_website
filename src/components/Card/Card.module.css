@@ -1,0 +1,34 @@
+.card {
+    width: 460px;
+    height: 316px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(103, 103, 103, 0.20);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card>img {
+    transform: scale(0.8);
+}
+
+.title {
+    /* font-family: Arm Hmk's Bebas Neue; */
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.description {
+    width: 380px;
+    color: #575757;
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
