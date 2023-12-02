@@ -3,11 +3,11 @@ import logo from "./../../assets/svgs/logo.svg"
 
 function Header() {
     let pages = [
-        ["Գլխավոր", "#home"],
-        ["առավելություններ", "#advantages"],
-        ["տեսականի", "#store"],
-        ["Մեր մասին", "#about"],
-        ["կապ", "#contact"],
+        ["ԳԼԽԱՎՈՐ", "#home"],
+        ["ԱՌԱՎԵԼՈՒԹՅՈՒՆՆԵՐ", "#advantages"],
+        ["ՏԵՍԱԿԱՆԻ", "#store"],
+        ["ՄԵՐ ՄԱՍԻՆ", "#about"],
+        ["ԿԱՊ", "#contact"],
     ]
     return (
         <section className={headerStyles.header}>
@@ -23,7 +23,7 @@ function Header() {
                 <div>
                     <div className={headerStyles.contact}>
                         <p className={headerStyles.phoneNumber}>+374 98 123 456</p>
-                        <a href="tel:+37498123456"><button className={headerStyles.contactButton}>Contact us</button></a>
+                        <a href="tel:+37498123456"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
                     </div>
                     <div className={headerStyles.languages}>
                         <p>Eng</p>
