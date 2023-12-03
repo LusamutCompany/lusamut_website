@@ -1,15 +1,17 @@
-.container{
+.container {
     width: 100%;
     height: auto;
     min-height: 100vh;
     background: #F8F8F8;
     text-align: center;
 }
-.title{
+
+.title {
     position: relative;
     top: 70px;
 }
-.cards{
+
+.cards {
     width: 80%;
     margin: auto;
     display: flex;
@@ -19,8 +21,13 @@
     position: relative;
     top: 70px;
 }
-@media only screen and (max-width: 375px) {
-    .container{
-        height: 932px;
+
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 1080px;
     }
+    .cards{
+        justify-content: center;
+    }
+
 }

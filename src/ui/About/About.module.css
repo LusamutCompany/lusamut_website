@@ -4,10 +4,11 @@
   background-color: #F8F8F8;
   display: flex;
 }
-
-.aboutText {
+.about>div{
   width: 50%;
-  height: 630px;
+  height: 100%;
+}
+.aboutText {
   padding: 72px 120px;
 }
 
@@ -33,7 +34,45 @@
 
 
 .aboutImageContainer {
-  width: 50%;
   display: flex;
   justify-content: flex-end;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .about {
+    height: 615px;
+    flex-direction: column-reverse;
+  }
+  .about>div{
+    width: 100%;
+  }
+  .aboutImageContainer{
+    height: 264px;
+    width: 100%;
+  }
+  .aboutText{
+    height: 351px;
+    padding: 50px;
+  }
+  
+  .aboutText>h1 {
+    width: 100%;
+    color: #000;
+    /* font-family: Arm Hmk's Bebas Neue; */
+    font-size: 26px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.04px;
+    position: relative;
+    top: -15px;
+  }
+
+  .aboutText>p {
+    width: 100%;
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    line-height: 160%;
+  }
 }

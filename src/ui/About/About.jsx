@@ -5,7 +5,6 @@ function About(){
  return (
     <section className={aboutStyles.about} id="about">
       <div className={aboutStyles.aboutText}>
-       
         <h1>Մեր Մասին</h1>
         <p>
          Հայտնի է, որ ընթերցողը, կարդալով հասկանալի տեքստ, չի կարողանա կենտրոնանալ տեքստի ձևավորման վրա: Lorem Ipsum օգտագործելը բացատրվում է նրանով, որ այն բաշխում է բառերը քիչ
@@ -18,7 +17,7 @@ function About(){
         </p>
       </div>
       <div className={aboutStyles.aboutImageContainer}>
-         <img className={aboutStyles.companyAbout} src={aboutImage}  height="630px" width="100%"/>
+         <img className={aboutStyles.companyAbout} src={aboutImage}  height="100%" width="100%"/>
       </div>
     </section>
  )

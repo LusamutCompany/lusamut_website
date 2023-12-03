@@ -41,7 +41,7 @@ function AdvantagesPage() {
     ]
     return (
         <div className={advantagesStyles.container} id="advantages">
-            <h1 className={advantagesStyles.title}>ԱՌԱՎԵԼՈՒԹՅՈՒՆՆԵՐ</h1>
+            <h1 className="title">ԱՌԱՎԵԼՈՒԹՅՈՒՆՆԵՐ</h1>
             <div className={advantagesStyles.cards}>
                 {cards.map((card,index)=>{
                     return <Card image={card.image} title={card.title} description={card.description}/> 

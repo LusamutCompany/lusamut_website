@@ -35,11 +35,24 @@
 
 @media only screen and (max-width: 400px) {
     .card{
-        width: 90%;
-        height: 120px;
+        width: 85vw;
+        height: 140px;
+        margin-top: 10px;
     }
     .card>img{
         width: 44px;
         height: 44px;
+    }
+    .title {
+        width: 90%;
+        height: 22px;
+        font-size: 15px;
+        position: relative;
+        top: -5px;
+    }
+    .description {
+        width: 90%;
+        height: 32px;
+        font-size: 12px;
     }
 }
