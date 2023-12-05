@@ -32,7 +32,7 @@
 
 .socialMedia>div p {
   margin-top: 10px;
-  font-family: Segoe UI;
+  font-family: "Segoe UI";
 }
 
 .footer {
@@ -117,10 +117,90 @@ form > button {
 form>button:hover{
   background: #CD4D0C;
 }
-@media only screen and (max-width: 400px) {
+
+
+
+@media screen and (max-width: 1500px) {
+  input,textarea {
+    width: 75%;
+  }
+  .contactForm>div>h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .contactForm>div>h1 {
+    font-size: 43px;
+  }
+  input,textarea {
+    width: 100%;
+  }
+  .contactForm {
+    padding: 45px;
+  }
+  .socialMedia {
+    width: 55%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    height: 552px;
+  }
+
+  .contact>div:first-child {
+    width: 100%;
+  }
+
+  .contact>div:last-child {
+    width: 47%;
+  }
+
+  .socialMedia {
+    width: 100%;
+    height: 550px;
+  }
+
+  .map {
+    width: 120%;
+    height: 550px;
+  }
+
+  .contactForm {
+    width: 100% ;
+    height: 550px !important;
+    padding: 50px;
+  }
+
+  .contactForm>div {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .contactForm>div>h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+  }
+
+  form {
+    margin-top: 0;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .contact {
     flex-direction: column-reverse;
-    height: 1414px;
+    height: 1527px;
   }
 
   .contact>div:first-child {
@@ -150,20 +230,65 @@ form>button:hover{
   }
 
   .contactForm>div>h1 {
-    margin-left: 5%;
+    margin-bottom: 20px;
   }
 
   form {
     margin-top: 0;
   }
-
+  
   input,
   textarea {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
 
-  button {
-    margin-left: 5%;
+}
+
+@media only screen and (max-width: 400px) {
+  .contact {
+    flex-direction: column-reverse;
+    height: 1527px;
   }
+
+  .contact>div:first-child {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .socialMedia {
+    width: 100% !important;
+  }
+
+  .map {
+    width: 100%;
+    height: 430px;
+  }
+
+  .contactForm {
+    width: 100% !important;
+    height: 430px;
+  }
+
+  .contactForm>div {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .contactForm>div>h1 {
+    margin-bottom: 20px;
+  }
+
+  form {
+    margin-top: 0;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    margin: auto;
+  }
+
 }

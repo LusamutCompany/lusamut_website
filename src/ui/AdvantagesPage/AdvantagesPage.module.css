@@ -18,12 +18,35 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 400px) {
+
+
+
+
+@media  screen and (max-width: 768px) {
+    .container {
+        height: 750px;
+        min-height: 0;
+    }
+    .cards{
+        justify-content: space-around;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .container {
+        height: 1370px;
+    }
+    .cards{
+        justify-content: space-around;
+    }
+}
+
+@media  screen and (max-width: 400px) {
     .container {
         height: 1080px;
     }
     .cards{
         justify-content: center;
     }
-
 }
+
