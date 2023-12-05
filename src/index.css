@@ -2,15 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --orange: #F45D11;
-  --gray: #8F9093;
+  font-family: "Arm Hmks Bebas Neue Regular";
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 button {
@@ -20,20 +17,16 @@ button {
 .title {
   color: #000;
   /* font-family: Arm Hmk's Bebas Neue; */
-  font-size: 40px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 2.4px;
-  position: relative;
-  top: 70px;
 }
 
 @media only screen and (max-width: 400px) {
   .title {
     font-size: 26px;
     letter-spacing: 1.04px;
-    top: 40px;
-
   }
 }

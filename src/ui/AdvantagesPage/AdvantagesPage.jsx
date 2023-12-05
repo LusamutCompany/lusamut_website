@@ -44,7 +44,7 @@ function AdvantagesPage() {
             <h1 className="title">ԱՌԱՎԵԼՈՒԹՅՈՒՆՆԵՐ</h1>
             <div className={advantagesStyles.cards}>
                 {cards.map((card,index)=>{
-                    return <Card image={card.image} title={card.title} description={card.description}/> 
+                    return <Card image={card.image} title={card.title} description={card.description} key={index}/> 
                 })}
             </div>
         </div>

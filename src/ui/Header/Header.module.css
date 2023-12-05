@@ -1,4 +1,4 @@
-.header{
+.header {
     position: fixed;
     left: 0;
     top: 0;
@@ -8,23 +8,34 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 11px;
+    font-size: 18px;
+    font-weight: 400;
     z-index: 100;
 }
-a{
-    color: #8F9093;
+
+a {
     text-decoration: none;
+    color: #8F9093;
+    font-family: "Arm Hmks Bebas Neue Regular";
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
 }
-.selected{
+a:hover{
     color: #000;
 }
-.menu{
+.selected {
+    color: #000;
+}
+
+.menu {
     width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.pages{
+
+.pages {
     width: 100%;
     min-width: 80%;
     display: flex;
@@ -33,40 +44,55 @@ a{
     margin-left: 5%;
     z-index: 50;
 }
-.extras{
+
+.extras {
     width: 45%;
     display: flex;
     justify-content: flex-end;
 }
-.extras>div{
+
+.extras>div {
     width: 70%;
     display: flex;
     justify-content: space-evenly;
 }
-.extras>div>div{
+
+.extras>div>div {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.phoneNumber{
+
+.phoneNumber {
     min-width: 130px;
-    font-size: 18px;
+    color: #565962;
+    font-family: "Arm Hmks Bebas Neue Regular";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
 }
-.contactButton{
+
+.contactButton {
     width: 120px;
     height: 50px;
-    background: var(--orange);
+    background: #F45D11;
     border: none;
     color: white;
     margin-left: 10px;
+    font-size: 20px;
 }
-.languages{
-    color: var(--gray);
-    font-size: 18px;
+.contactButton:hover{
+    background: #CD4D0C;
 }
-.languages>p{
+.languages {
+    color: #8F9093;
+}
+
+.languages>p {
     cursor: pointer;
 }
-.languages>p:last-child{
+
+.languages>p:last-child {
     margin-left: 10px;
 }

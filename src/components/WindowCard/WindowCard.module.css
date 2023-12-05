@@ -1,0 +1,92 @@
+.card {
+    width: 230px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 200ms;
+}
+.card>button{
+    display: none;
+}
+.title {
+    color: #868686;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120.2%;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
+.properties {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.properties>span>p:first-child {
+    color: #868686;
+    font-family: Segoe UI;
+}
+
+.properties>span>p:last-child {
+    color: #000;
+    font-family: Segoe UI;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    background: #FFF;
+    box-shadow: 0px 0px 16.052px 0px rgba(14, 30, 60, 0.12);
+}
+
+.card:hover>.title {
+    color: #F45D11;
+}
+
+
+.selectedCard {
+    width: 340px;
+    height: 120%;
+    transform: scale(1.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 0px 21.751px 0px rgba(14, 30, 60, 0.12);
+}
+
+
+.selectedCard>.title {
+    color: #F45D11;
+}
+.selectedCard>button {
+    width: 68px;
+    height: 28px;
+    background: #E9E9ED;
+    border: none;
+    color: #83838A;
+    font-size: 14px;
+    letter-spacing: 0.84px;
+    position: relative;
+    left: 32.5%;
+    top: 10px;
+}
+.selectedCard>button {
+    display: block;
+}
+.selectedCard>button:hover{
+    background: #DDDDE1;
+}
+.selectedCard>.properties {
+    display: flex;
+}

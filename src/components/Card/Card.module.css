@@ -6,8 +6,9 @@
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    margin-left: 10px;
 }
 
 .card>img {
@@ -15,7 +16,6 @@
 }
 
 .title {
-    /* font-family: Arm Hmk's Bebas Neue; */
     font-size: 30px;
     font-style: normal;
     font-weight: 400;

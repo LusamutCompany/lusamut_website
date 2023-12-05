@@ -12,17 +12,8 @@
   padding: 72px 120px;
 }
 
-.aboutText>h1 {
-  /* margin-bottom: 91px; */
-  font-size: 37px;
-  font-weight: 400;
-  width: 80%;
+.aboutText>h1{
   line-height: 72px;
-  /* font-family:' Arm Hmk's Bebas Neue'; */
-  /* letter-spacing: 4px; */
-  /* /  */
-  /* font-size: 60px; */
-
 }
 
 .aboutText>p {
