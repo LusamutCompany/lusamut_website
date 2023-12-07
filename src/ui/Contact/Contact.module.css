@@ -140,7 +140,7 @@ form>button:hover{
     flex-direction: column-reverse;
   }
   .contactForm>div>h1 {
-    font-size: 43px;
+    font-size: 40px;
   }
   input,textarea {
     width: 100%;
