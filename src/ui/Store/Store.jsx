@@ -489,7 +489,7 @@ function Store() {
             </div>
             <div className={storeStyles.windowProperties}>
                 {windowCards[selected].windowTypes.map((windowType, index) => {
-                    return <WindowPropertyCard image={windowType.image} props1={windowType.prop1} props2={windowType.prop2} key={index}/>
+                    return <WindowPropertyCard image={windowType.image} props1={windowType.prop1} props2={windowType.prop2} key={index} />
                 })}
             </div>
         </div>

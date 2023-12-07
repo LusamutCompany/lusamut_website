@@ -90,3 +90,9 @@
 .selectedCard>.properties {
     display: flex;
 }
+
+@media screen and (max-width: 820px){
+    .card{
+        scroll-snap-align: start;
+    }
+}

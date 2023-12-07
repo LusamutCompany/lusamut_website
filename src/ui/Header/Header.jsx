@@ -19,10 +19,10 @@ function Header() {
         ["ԱՌԱՎԵԼՈՒԹՅՈՒՆՆԵՐ", "#advantages"],
         ["ՏԵՍԱԿԱՆԻ", "#store"],
         ["ՄԵՐ ՄԱՍԻՆ", "#about"],
-        ["ԿԱՊ", "#contact"],
+        ["ԿԱՊ", "#contactForm"],
     ]
     return (
-        <section className={headerStyles.header}>
+        <section className={headerStyles.header} id="header">
             <div className={headerStyles.menu}>
                 <img className={headerStyles.companyLogo} src={logo} width="220px" height="77px" />
                 <div className={headerStyles.pages}>
@@ -34,8 +34,8 @@ function Header() {
             <div className={headerStyles.extras}>
                 <div>
                     <div className={headerStyles.contact}>
-                        <p className={headerStyles.phoneNumber}>+374 98 123 456</p>
-                        <a href="tel:+37498123456"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
+                       <a href="tel:+37498123456"><p className={headerStyles.phoneNumber}>+374 98 123 456</p></a> 
+                        <a href="#contact"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
                     </div>
                     <div className={headerStyles.languages}>
                         <p>Eng</p>
@@ -56,7 +56,7 @@ function Header() {
                         return <a key={index} href={item[1]} className={headerStyles.page} onClick={closeMenu}><h1>{item[0]}</h1></a>
                     })}
                     </div>
-                    <a href="tel:+37498123456"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
+                    <a href="#contact"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
                     <div className={headerStyles.languages}>
                         <p>Eng</p>
                         <p className={headerStyles.selected}>Հայ</p>

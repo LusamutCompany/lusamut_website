@@ -79,7 +79,7 @@ function Contact() {
                     <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=44.489747%2C40.179289&mode=search&oid=172824248383&ol=biz&z=17.05" width="100%" height="100%" allowFullScreen={true} style={{ position: "relative" }}></iframe>
                 </div>
             </div>
-            <div className={contactStyles.contactForm}>
+            <div className={contactStyles.contactForm} id="contactForm">
                 <div>
                     <h1 className="title">ԿԱՊ ՄԵԶ ՀԵՏ</h1>
                     <form>
