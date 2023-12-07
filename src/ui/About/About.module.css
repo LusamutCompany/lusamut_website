@@ -61,57 +61,40 @@
     width: 100%;
     font-size: 30px;
     letter-spacing: 1.04px;
-    /* position: relative;
-    top: -15px; */
   }
   .aboutText>p {
     width: 100%;
-    color: #000;
     font-size: 13px;
     line-height: 160%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .about {
-    height: 400px;
+    height: 800px;
+    flex-direction: column-reverse;
   }
   .about>div{
-    width: 50%;
+    width: 100%;
   }
   .aboutImageContainer{
-    width: 100%;
+    height: 400px !important;
   }
   .aboutText{
-    height: 300px;
-    padding: 35px;
-    display: flex; 
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
  }
   .aboutText>h1 {
-    width: 100%;
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 0;
-    /* position: relative;
-    top: -15px; */
   }
   .aboutText>p {
-    width: 100%;
-    color: #000;
-    font-family: "Segoe UI";
-    font-size: 11px;
-    line-height: 160%;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .about {
     height: 615px;
-    flex-direction: column-reverse;
-  }
-  .about>div{
-    width: 100%;
   }
   .aboutImageContainer{
     width: 100%;
@@ -120,7 +103,6 @@
     padding: 37px;
   }
   .aboutText>h1 {
-    color: #000;
     font-size: 26px;
     letter-spacing: 1.04px;
     font-weight: 400;
@@ -128,44 +110,16 @@
     top: -15px;
   }
   .aboutText>p {
-    width: 100%;
-    color: #000;
-    font-family: "Segoe UI";
     font-size: 12px;
-    line-height: 160%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .about {
-    height: 615px;
-    flex-direction: column-reverse;
-  }
-  .about>div{
-    width: 100%;
-  }
   .aboutImageContainer{
     height: 264px;
-    width: 100%;
   }
   .aboutText{
     height: 351px;
     padding: 40px;
-  }
-  .aboutText>h1 {
-    width: 100%;
-    font-size: 26px;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.04px;
-    position: relative;
-    top: -15px;
-  }
-  .aboutText>p {
-    width: 100%;
-    color: #000;
-    font-family: "Segoe UI";
-    font-size: 12px;
-    line-height: 160%;
   }
 }

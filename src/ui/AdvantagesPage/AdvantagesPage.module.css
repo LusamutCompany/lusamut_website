@@ -24,8 +24,7 @@
 
 @media  screen and (max-width: 768px) {
     .container {
-        height: 750px;
-        min-height: 0;
+        min-height: 800px;
     }
     .cards{
         justify-content: space-around;
@@ -35,9 +34,6 @@
 @media  screen and (max-width: 600px) {
     .container {
         height: 1370px;
-    }
-    .cards{
-        justify-content: space-around;
     }
 }
 
