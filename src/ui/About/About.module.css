@@ -15,7 +15,6 @@
 .aboutText>h1{
   line-height: 72px;
   margin-bottom: 19px;
-  font-family: "Arm Hmk's Bebas Neue";
 }
 
 .aboutText>p {
@@ -60,8 +59,6 @@
  }
   .aboutText>h1 {
     width: 100%;
-    color: #000;
-    font-family: "Arm Hmk's Bebas Neue";
     font-size: 30px;
     letter-spacing: 1.04px;
     /* position: relative;
@@ -70,7 +67,6 @@
   .aboutText>p {
     width: 100%;
     color: #000;
-    font-family: "Segoe UI";
     font-size: 13px;
     line-height: 160%;
   }
@@ -95,10 +91,7 @@
  }
   .aboutText>h1 {
     width: 100%;
-    color: #000;
-    font-family: "Arm Hmk's Bebas Neue";
     font-size: 24px;
-    letter-spacing: 1.04px;
     margin-bottom: 0;
     /* position: relative;
     top: -15px; */
@@ -128,7 +121,6 @@
   }
   .aboutText>h1 {
     color: #000;
-    font-family: "Arm Hmk's Bebas Neue";
     font-size: 26px;
     letter-spacing: 1.04px;
     font-weight: 400;
@@ -162,8 +154,6 @@
   }
   .aboutText>h1 {
     width: 100%;
-    color: #000;
-    font-family: "Arm Hmk's Bebas Neue";
     font-size: 26px;
     font-style: normal;
     line-height: normal;

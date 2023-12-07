@@ -1,7 +1,19 @@
 import headerStyles from "./Header.module.css"
 import logo from "./../../assets/svgs/logo.svg"
+import instagramIcon from "../../assets/svgs/Instagram1.svg"
+import callIcon from "../../assets/svgs/Call.svg"
+import menuIcon from "../../assets/svgs/Menu.svg"
+import closeMenuIcon from "../../assets/svgs/closeMenu.svg"
+import { useState } from "react"
 
 function Header() {
+    let [isOpen, setIsOpen] = useState(false)
+    let openMenu = () => {
+        setIsOpen(true)
+    }
+    let closeMenu = () => {
+        setIsOpen(false)
+    }
     let pages = [
         ["ԳԼԽԱՎՈՐ", "#home"],
         ["ԱՌԱՎԵԼՈՒԹՅՈՒՆՆԵՐ", "#advantages"],
@@ -31,6 +43,26 @@ function Header() {
                     </div>
                 </div>
             </div>
+            <div className={headerStyles.mobileHeader}>
+                <a href="https://www.instagram.com/lusamut_am/" target="_blank"><img src={instagramIcon} alt="" width="32px" height="32px" /></a>
+                <a href="tel:+37498123456"><img src={callIcon} alt="" width="32px" height="32px" /></a>
+                <img src={menuIcon} alt="" width="32px" height="32px" onClick={openMenu} />
+            </div>
+            {isOpen ? (
+                <div className={headerStyles.mobileMenu}>
+                    <img src={closeMenuIcon} alt="" width="32px" height="32px" className={headerStyles.closeIcon} onClick={closeMenu}/>
+                    <div className={headerStyles.mobilePages}>
+                    {pages.map((item, index) => {
+                        return <a key={index} href={item[1]} className={headerStyles.page} onClick={closeMenu}><h1>{item[0]}</h1></a>
+                    })}
+                    </div>
+                    <a href="tel:+37498123456"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
+                    <div className={headerStyles.languages}>
+                        <p>Eng</p>
+                        <p className={headerStyles.selected}>Հայ</p>
+                    </div>
+                </div>
+            ) : ""}
         </section>
     )
 }

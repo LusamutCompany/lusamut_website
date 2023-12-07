@@ -12,7 +12,7 @@
 }
 
 .sliderContent {
-    width: 80%;
+    width: 90%;
     height: 30%;
     color: #FFF;
     font-style: normal;
@@ -49,4 +49,28 @@
     background: white;
     clip-path: polygon(25% 25%, 50% 10%, 75% 25%, 75% 75%, 25% 75%);
     transform: scale(2);
+}
+
+@media screen and (max-width: 680px) {
+    .slider{
+        height: calc(100vh - 88px);
+        margin-top: 88px;
+    }
+    .sliderContent{
+        height: 20%;
+    }
+    .title{
+        width: 80%;
+        font-size: 26px;
+        letter-spacing: 1.04px;
+    }
+    .description{
+        width: 80%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .pager{
+        transform: scale(0.7);
+        margin-left: -3%;
+    }
 }
