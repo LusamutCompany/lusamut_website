@@ -10,9 +10,11 @@
     cursor: pointer;
     transition: 200ms;
 }
-.card>button{
+
+.card>button {
     display: none;
 }
+
 .title {
     color: #868686;
     font-size: 18px;
@@ -54,9 +56,9 @@
 
 .selectedCard {
     width: 340px;
-    height: 120%;
+    height: 125%;
     transform: scale(1.1);
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -69,6 +71,7 @@
 .selectedCard>.title {
     color: #F45D11;
 }
+
 .selectedCard>button {
     width: 68px;
     height: 28px;
@@ -80,19 +83,95 @@
     position: relative;
     left: 32.5%;
     top: 10px;
-}
-.selectedCard>button {
     display: block;
 }
-.selectedCard>button:hover{
+
+.selectedCard>button:hover {
     background: #DDDDE1;
 }
+
 .selectedCard>.properties {
     display: flex;
 }
 
-@media screen and (max-width: 820px){
+@media screen and (max-width: 1300px) {
+    .card {
+        height: 280px;
+        transform: scale(0.7);
+        justify-content: space-between;
+    }
+
+    .card>.title {
+        font-size: 16px;
+    }
+
+    .card:hover {
+        transform: scale(0.9);
+    }
+
+    .selectedCard {
+        width: 450px;
+        height: 140%;
+        transform: scale(0.9);
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .selectedCard span {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .card {
+        width: 300px;
+        transform: scale(1);
+    }
+
+    .card>.title {
+        font-size: 18px;
+    }
+
+    .selectedCard {
+        width: 350px;
+        height: 60%;
+        transform: scale(0.7);
+        padding: 5px;
+    }
+
+    .selectedCard>button {
+        width: 68px;
+    }
+
+    .selectedCard>.title {
+        font-size: 24px
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .selectedCard {
+        height: 45%;
+    }
+}
+@media screen and (max-width: 740px) {
     .card{
+        width: 280px;
+        transform: scale(0.8);
+    }
+    .selectedCard{
+        transition: scale(0.6);
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .card{
+        width: 170px;
         scroll-snap-align: start;
+        /* transform: scale(1); */
+    }
+    .selectedCard{
+        width: 196px;
+        height: 120%;
+        /* transform: scale(1); */
     }
 }

@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 125px;
   overflow-x: hidden;
 }
 
@@ -23,7 +24,11 @@ button {
   line-height: normal;
   letter-spacing: 2.4px;
 }
-
+@media screen and (max-width: 1060px) {
+  html{
+    scroll-padding: 88px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .title {
     font-size: 45px;

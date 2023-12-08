@@ -1,13 +1,13 @@
 import emailjs from '@emailjs/browser';
 import { useRef, useEffect, useState } from 'react';
 import contactStyles from "./Contact.module.css"
-import instagramImage from "./../../assets/svgs/Instagram.svg";
-import facebookImage from "./../../assets/svgs/Facebook.svg";
-
+// add promps to name inputs make it good
 const serviceID = 'default_service';
 const templateID = 'template_ypcs4ke';
 function Contact() {
     const [sending, setSending] = useState(false)
+    let [mailValid, setMailValid] = useState(true)
+    let [phoneValid, setPhoneValid] = useState(true)
     const nameRef = useRef(null)
     const emailRef = useRef(null)
     const telephoneRef = useRef(null)
@@ -15,26 +15,32 @@ function Contact() {
     useEffect(() => emailjs.init("ZscmY3hjIBNzRMcni"), []);
     const sendMail = (event) => {
         event.preventDefault()
-        if (!sending &&
-            nameRef.current.value.trim() !== "" &&
-            emailRef.current.value.trim() !== "" &&
-            telephoneRef.current.value.trim() !== "" &&
-            messageRef.current.value.trim() !== "") {
-            setSending(true)
-            emailjs.send(serviceID, templateID, {
-                from_name: nameRef.current.value,
-                email: emailRef.current.value,
-                telephone: telephoneRef.current.value,
-                message: messageRef.current.value
-            })
-                .then(() => {
-                    alert('Sent!');
-                    setSending(false)
-                }, (err) => {
-                    alert(JSON.stringify(err));
-                    setSending(false)
-                });
+        emailRef.current.required = true
+        telephoneRef.current.required = true
+        setMailValid(emailRef.current.checkValidity())
+        setPhoneValid(telephoneRef.current.checkValidity())
+        if (!emailRef.current.checkValidity() || !telephoneRef.current.checkValidity()) {
+            return null
         }
+        if (!sending &&
+            nameRef.current.value.trim() === "" ||
+            messageRef.current.value.trim() === "") {
+            return null
+        }
+        setSending(true)
+        emailjs.send(serviceID, templateID, {
+            from_name: nameRef.current.value,
+            email: emailRef.current.value,
+            telephone: telephoneRef.current.value,
+            message: messageRef.current.value
+        })
+            .then(() => {
+                alert('Sent!');
+                setSending(false)
+            }, (err) => {
+                alert(JSON.stringify(err));
+                setSending(false)
+            });
     }
     return (
         <section className={contactStyles.contact} id="contact">
@@ -84,8 +90,10 @@ function Contact() {
                     <h1 className="title">ԿԱՊ ՄԵԶ ՀԵՏ</h1>
                     <form>
                         <input type="text" placeholder="Անուն Ազգանուն" ref={nameRef} />
-                        <input type="email" placeholder="Էլ․ հասցե" ref={emailRef} />
-                        <input type="tel" placeholder="Հեռախոսահամար" ref={telephoneRef} />
+                        <input type="email" placeholder="Էլ․ հասցե" ref={emailRef} onChange={(e) => {setMailValid(e.target.checkValidity())}} />
+                        {!mailValid ? <span>Սխալ էլ․ հասցե</span> : ""}
+                        <input type="number" placeholder="Հեռախոսահամար" ref={telephoneRef} onChange={(e) => {setPhoneValid(e.target.checkValidity())}} />
+                        {!phoneValid ? <span>Սխալ Հեռախոսահամար</span> : ""}
                         <textarea type="text" placeholder="Նամակ" ref={messageRef}></textarea>
                         <button type="submit" onClick={sendMail}>{!sending ? "Ուղարկել" : "Ուղարկվում է"}</button>
                     </form>

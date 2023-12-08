@@ -103,6 +103,29 @@ textarea {
   resize: vertical;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input:hover, textarea:hover {
+  background: #D8D8D8;
+}
+
+input:focus, textarea:focus {
+  background: #E3E3E3;
+  color: #000;
+}
+input:valid, textarea:valid{
+  color: #000;
+}
+input:invalid{
+  border: 1px solid #E81B27;
+  background: #E3E3E3;
+}
 form > button {
   width: 199px;
   height: 50px;
@@ -117,7 +140,12 @@ form > button {
 form>button:hover{
   background: #CD4D0C;
 }
-
+form span{
+color: #E81B27;
+font-family: Segoe UI;
+font-size: 12px;
+font-weight: 400;
+}
 
 
 @media screen and (max-width: 1500px) {
@@ -143,7 +171,7 @@ form>button:hover{
     font-size: 40px;
   }
   input,textarea {
-    width: 100%;
+    width: 90%;
   }
   .contactForm {
     width: 100% !important;
@@ -170,7 +198,7 @@ form>button:hover{
   .contactForm {
     width: 100% !important;
     height: 430px;
-    padding: 20px;
+    padding: 40px;
   }
 
   .contactForm>div {
@@ -191,7 +219,6 @@ form>button:hover{
   input,
   textarea {
     width: 100%;
-    margin: auto;
   }
 
 }
