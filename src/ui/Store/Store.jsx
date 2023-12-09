@@ -472,6 +472,7 @@ function Store() {
                 տեսականի
             </h1>
             <div className={storeStyles.windows}>
+                <div className={storeStyles.absoluteBackground}></div>
                 {
                     windowCards.map((item, index) => {
                         return (

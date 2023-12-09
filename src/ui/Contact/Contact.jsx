@@ -6,41 +6,59 @@ const serviceID = 'default_service';
 const templateID = 'template_ypcs4ke';
 function Contact() {
     const [sending, setSending] = useState(false)
+    let [nameValid, setNameValid] = useState(true)
     let [mailValid, setMailValid] = useState(true)
     let [phoneValid, setPhoneValid] = useState(true)
+    let [messageValid, setMessageValid] = useState(true)
     const nameRef = useRef(null)
     const emailRef = useRef(null)
     const telephoneRef = useRef(null)
     const messageRef = useRef(null)
+    let clearInputs = () => {
+        nameRef.current.value = ""
+        telephoneRef.current.value = ""
+        emailRef.current.value = ""
+        messageRef.current.value = ""
+        nameRef.current.required = false
+        telephoneRef.current.required = false
+        emailRef.current.required = false
+        messageRef.current.required = false
+    }
     useEffect(() => emailjs.init("ZscmY3hjIBNzRMcni"), []);
     const sendMail = (event) => {
         event.preventDefault()
-        emailRef.current.required = true
-        telephoneRef.current.required = true
-        setMailValid(emailRef.current.checkValidity())
-        setPhoneValid(telephoneRef.current.checkValidity())
-        if (!emailRef.current.checkValidity() || !telephoneRef.current.checkValidity()) {
-            return null
+        if (!sending) {
+            nameRef.current.required = true
+            telephoneRef.current.required = true
+            emailRef.current.required = true
+            messageRef.current.required = true
+            setNameValid(nameRef.current.checkValidity())
+            setMessageValid(messageRef.current.checkValidity())
+            setMailValid(emailRef.current.checkValidity())
+            setPhoneValid(telephoneRef.current.checkValidity())
+            if (!emailRef.current.checkValidity() ||
+                !telephoneRef.current.checkValidity() ||
+                !nameRef.current.checkValidity() ||
+                !messageRef.current.checkValidity()) {
+                return null
+            }
+            setSending(true)
+            emailjs.send(serviceID, templateID, {
+                from_name: nameRef.current.value,
+                email: emailRef.current.value,
+                telephone: telephoneRef.current.value,
+                message: messageRef.current.value
+            })
+                .then(() => {
+                    alert('Ուղարկվել է!');
+                    clearInputs()
+                    setSending(false)
+                }, () => {
+                    alert("Ինչ որ բան այնպես չգնաց !");
+                    clearInputs()
+                    setSending(false)
+                });
         }
-        if (!sending &&
-            nameRef.current.value.trim() === "" ||
-            messageRef.current.value.trim() === "") {
-            return null
-        }
-        setSending(true)
-        emailjs.send(serviceID, templateID, {
-            from_name: nameRef.current.value,
-            email: emailRef.current.value,
-            telephone: telephoneRef.current.value,
-            message: messageRef.current.value
-        })
-            .then(() => {
-                alert('Sent!');
-                setSending(false)
-            }, (err) => {
-                alert(JSON.stringify(err));
-                setSending(false)
-            });
     }
     return (
         <section className={contactStyles.contact} id="contact">
@@ -90,11 +108,13 @@ function Contact() {
                     <h1 className="title">ԿԱՊ ՄԵԶ ՀԵՏ</h1>
                     <form>
                         <input type="text" placeholder="Անուն Ազգանուն" ref={nameRef} />
-                        <input type="email" placeholder="Էլ․ հասցե" ref={emailRef} onChange={(e) => {setMailValid(e.target.checkValidity())}} />
+                        {!nameValid ? <span>Մուտքագրեք Անուն</span> : ""}
+                        <input type="email" placeholder="Էլ․ հասցե" ref={emailRef} />
                         {!mailValid ? <span>Սխալ էլ․ հասցե</span> : ""}
-                        <input type="number" placeholder="Հեռախոսահամար" ref={telephoneRef} onChange={(e) => {setPhoneValid(e.target.checkValidity())}} />
+                        <input type="number" placeholder="Հեռախոսահամար" ref={telephoneRef} />
                         {!phoneValid ? <span>Սխալ Հեռախոսահամար</span> : ""}
                         <textarea type="text" placeholder="Նամակ" ref={messageRef}></textarea>
+                        {!messageValid ? <span>Լրացրեք հաղորդագրություն</span> : ""}
                         <button type="submit" onClick={sendMail}>{!sending ? "Ուղարկել" : "Ուղարկվում է"}</button>
                     </form>
                 </div>

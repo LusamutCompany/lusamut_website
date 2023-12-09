@@ -32,7 +32,14 @@
     background: white;
 }
 
-
+.absoluteBackground{
+    display: none;
+    width: 100vw;
+    height: 160px;
+    background: #F9F9FC;
+    position: absolute;
+    z-index: -1;
+}
 @media screen and (max-width: 1300px) {
     .store {
         width: 100%;
@@ -91,24 +98,34 @@
 
 @media screen and (max-width: 685px) {
     .store{
-        height: 1480px;
+        height: 1620px;
+    }
+    .absoluteBackground{
+        display: block;
     }
     .windows {
-        height: 160px;
+        height: 294px;
         flex-wrap: nowrap;
+        justify-content: unset;
+        padding: 0;
         overflow-x: scroll;
         overflow-y: hidden;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
+        /* scroll-snap-type: x mandatory;
+        scroll-behavior: smooth; */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        background: transparent;
+        position: inherit;
+        margin-top: 70px;
     }
 
-    /* .windows::-webkit-scrollbar {
+    .windows::-webkit-scrollbar {
         display: none;
     }
     .windows{
         -ms-overflow-style: none;
         scrollbar-width: none;
-    } */
+    }
 }
 
 

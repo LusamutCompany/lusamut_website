@@ -10,7 +10,15 @@
     cursor: pointer;
     transition: 200ms;
 }
+.card:hover {
+    transform: scale(1.15);
+    background: #FFF;
+    box-shadow: 0px 0px 16.052px 0px rgba(14, 30, 60, 0.12);
+}
 
+.card:hover>.title {
+    color: #F45D11;
+}
 .card>button {
     display: none;
 }
@@ -28,6 +36,7 @@
     width: 100%;
     display: none;
     justify-content: space-around;
+    text-align: center;
     font-size: 12px;
     font-weight: 700;
     line-height: normal;
@@ -43,15 +52,7 @@
     font-family: Segoe UI;
 }
 
-.card:hover {
-    transform: scale(1.15);
-    background: #FFF;
-    box-shadow: 0px 0px 16.052px 0px rgba(14, 30, 60, 0.12);
-}
 
-.card:hover>.title {
-    color: #F45D11;
-}
 
 
 .selectedCard {
@@ -77,22 +78,26 @@
     height: 28px;
     background: #E9E9ED;
     border: none;
-    color: #83838A;
-    font-size: 14px;
-    letter-spacing: 0.84px;
     position: relative;
     left: 32.5%;
     top: 10px;
     display: block;
 }
-
+.selectedCard>button>span{
+    color: #83838A;
+    font-size: 14px;
+    letter-spacing: 0.84px;
+}
 .selectedCard>button:hover {
     background: #DDDDE1;
 }
-
+.selectedCard>button>img{
+    display: none;
+}
 .selectedCard>.properties {
     display: flex;
 }
+
 
 @media screen and (max-width: 1300px) {
     .card {
@@ -101,7 +106,7 @@
         justify-content: space-between;
     }
 
-    .card>.title {
+    .title {
         font-size: 16px;
     }
 
@@ -128,7 +133,7 @@
         transform: scale(1);
     }
 
-    .card>.title {
+    .title {
         font-size: 18px;
     }
 
@@ -153,25 +158,75 @@
         height: 45%;
     }
 }
+
 @media screen and (max-width: 740px) {
-    .card{
+    .card {
         width: 280px;
         transform: scale(0.8);
     }
-    .selectedCard{
+
+    .selectedCard {
         transition: scale(0.6);
     }
 }
 
 @media screen and (max-width: 685px) {
-    .card{
-        width: 170px;
+    .card {
+        min-width: 196px;
+        height: 70%;
+        transform: scale(1);
         scroll-snap-align: start;
-        /* transform: scale(1); */
+        justify-content: space-evenly;
+        margin-left: 30px;
     }
-    .selectedCard{
-        width: 196px;
-        height: 120%;
-        /* transform: scale(1); */
+    .card:hover{
+        transform: scale(1.1);
+    }
+    .card>img{
+        width: 73px;
+        height:100px;
+    }
+    .title{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .selectedCard {
+        min-width: 196px;
+        height: 100%;
+        transform: scale(1);
+        margin-left: 20px;
+    }
+    .selectedCard>.title{
+        font-size: 14px;
+        letter-spacing: 0.84px;
+    }
+    .selectedCard>img{
+        width: 96px;
+        height: 132px;
+    }
+    .selectedCard>button {
+        width: 28px;
+        min-height: 28px;
+        top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .selectedCard>button>span{
+        display: none;
+    }
+    .selectedCard>button>img{
+        display: block;
+    }
+    .selectedCard p{
+        font-size: 10px;
+    }
+    .selectedCard > .properties{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .selectedCard span{
+        margin-top: 10px;
     }
 }
