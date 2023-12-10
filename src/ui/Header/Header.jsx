@@ -56,7 +56,7 @@ function Header() {
                         return <a key={index} href={item[1]} className={headerStyles.page} onClick={closeMenu}><h1>{item[0]}</h1></a>
                     })}
                     </div>
-                    <a href="#contact"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
+                    <a href="#contact"><button className={headerStyles.contactButton} onClick={closeMenu}>ԿԱՊՎԵԼ</button></a>
                     <div className={headerStyles.languages}>
                         <p>Eng</p>
                         <p className={headerStyles.selected}>Հայ</p>

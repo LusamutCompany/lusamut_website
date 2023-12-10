@@ -3,6 +3,7 @@
     height: 1061px;
     min-height: auto;
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .store>h1 {
@@ -39,6 +40,9 @@
     background: #F9F9FC;
     position: absolute;
     z-index: -1;
+}
+.forMobile{
+    display: none;
 }
 @media screen and (max-width: 1300px) {
     .store {
@@ -98,7 +102,7 @@
 
 @media screen and (max-width: 685px) {
     .store{
-        height: 1690px;
+        height: 2084px;
     }
     .absoluteBackground{
         display: block;
@@ -126,29 +130,51 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+    .forMobile{
+        display: flex;
+        margin-top: 585px;
+    }
+    .windowProperties {
+        margin-top: 80px;
+    }
 }
 
 
 @media screen and (max-width: 610px) {
     .store {
-        height: 1780px;
+        height: 2124px;
+    }
+    .windowProperties {
+        margin-top: 40px;
     }
 }
 
 @media screen and (max-width: 560px) {
     .store {
-        height: 2680px;
+        height: 3054px;
+    }
+    .forMobile{
+        margin-top: 1520px;
+    }
+    .windowProperties {
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width: 490px) {
     .store {
-        height: 3070px;
+        height: 3464px;
+    }
+    .forMobile{
+        margin-top: 1900px;
     }
 }
 
 @media screen and (max-width: 390px) {
     .store {
-        height: 2720px;
+        height: 3114px;
+    }
+    .forMobile{
+        margin-top: 1550px;
     }
 }

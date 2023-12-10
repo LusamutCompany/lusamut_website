@@ -177,7 +177,7 @@
         transform: scale(1);
         scroll-snap-align: start;
         justify-content: space-evenly;
-        margin-left: 30px;
+        margin-left: 10px;
     }
     .card:hover{
         transform: scale(1.1);
@@ -186,19 +186,21 @@
         width: 73px;
         height:100px;
     }
-    .title{
+    .card > .title{
         font-size: 14px;
-        margin-top: 15px;
+        margin-top: 4px;
     }
     .selectedCard {
         min-width: 196px;
-        height: 100%;
+        height: 274px;
         transform: scale(1);
         margin-left: 20px;
     }
     .selectedCard>.title{
         font-size: 14px;
         letter-spacing: 0.84px;
+        position: relative;
+        top: 15px;
     }
     .selectedCard>img{
         width: 96px;
@@ -207,7 +209,8 @@
     .selectedCard>button {
         width: 28px;
         min-height: 28px;
-        top: 20px;
+        left: 37.5%;
+        top: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -223,7 +226,7 @@
     }
     .selectedCard > .properties{
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 20px;
     }
     .selectedCard span{

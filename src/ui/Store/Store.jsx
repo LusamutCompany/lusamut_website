@@ -1,12 +1,17 @@
 import { useState } from "react"
-import WindowCard from "../../components/WindowCard/WindowCard"
 import storeStyles from "./Store.module.css"
 import WindowPropertyCard from "../../components/WindowPropertyCard/WindowPropertyCard"
+import Windows from "../../components/Windows/Windows"
+import windowImage1 from "../../assets/pngs/window1.png"
+import windowImage2 from "../../assets/pngs/window2.png"
+import windowImage3 from "../../assets/pngs/window3.png"
+import windowImage4 from "../../assets/pngs/window4.png"
+import windowImage5 from "../../assets/pngs/window5.png"
 function Store() {
     const [selected, setSelected] = useState(0)
     const windowCards = [
         {
-            image: "",
+            image: windowImage1,
             title: "Deceuninck Favorit",
             properties: {
                 mechanism: "Maco / Hoppe",
@@ -98,7 +103,7 @@ function Store() {
             ]
         },
         {
-            image: "",
+            image: windowImage2,
             title: "Deceuninck Favorit",
             properties: {
                 mechanism: "Maco / Hoppe",
@@ -190,7 +195,7 @@ function Store() {
             ]
         },
         {
-            image: "",
+            image: windowImage3,
             title: "Deceuninck Favorit",
             properties: {
                 mechanism: "Maco / Hoppe",
@@ -282,7 +287,7 @@ function Store() {
             ]
         },
         {
-            image: "",
+            image: windowImage4,
             title: "Deceuninck Favorit",
             properties: {
                 mechanism: "Maco / Hoppe",
@@ -374,7 +379,7 @@ function Store() {
             ]
         },
         {
-            image: "",
+            image: windowImage5,
             title: "Deceuninck Favorit",
             properties: {
                 mechanism: "Maco / Hoppe",
@@ -471,28 +476,13 @@ function Store() {
             <h1 className="title">
                 տեսականի
             </h1>
-            <div className={storeStyles.windows}>
-                <div className={storeStyles.absoluteBackground}></div>
-                {
-                    windowCards.map((item, index) => {
-                        return (
-                            <WindowCard
-                                key={index}
-                                image={item.image}
-                                title={item.title}
-                                properties={item.properties}
-                                isSelected={index === selected ? true : false}
-                                index={index}
-                                setSelected={setSelected} />
-                        )
-                    })
-                }
-            </div>
+            <Windows selected={selected} setSelected={setSelected} windowCards={windowCards} styles={storeStyles}/>
             <div className={storeStyles.windowProperties}>
                 {windowCards[selected].windowTypes.map((windowType, index) => {
                     return <WindowPropertyCard image={windowType.image} props1={windowType.prop1} props2={windowType.prop2} key={index} />
                 })}
             </div>
+            <Windows selected={selected} setSelected={setSelected} windowCards={windowCards} styles={storeStyles} forMobile/>
         </div>
     )
 }
