@@ -98,7 +98,7 @@
 
 @media screen and (max-width: 685px) {
     .store{
-        height: 1620px;
+        height: 1690px;
     }
     .absoluteBackground{
         display: block;
@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 610px) {
     .store {
-        height: 1710px;
+        height: 1780px;
     }
 }
 
@@ -143,12 +143,12 @@
 
 @media screen and (max-width: 490px) {
     .store {
-        height: 2980px;
+        height: 3070px;
     }
 }
 
 @media screen and (max-width: 390px) {
     .store {
-        height: 2620px;
+        height: 2720px;
     }
 }
