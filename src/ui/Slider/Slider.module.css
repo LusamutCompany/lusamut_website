@@ -42,11 +42,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .pager>div {
     width: 20%;
-    height: 100%;
+    min-height: 20px;
     background: white;
     clip-path: polygon(25% 25%, 50% 10%, 75% 25%, 75% 75%, 25% 75%);
     transform: scale(2);
@@ -115,7 +116,7 @@
 @media screen and (max-width: 480px) {
     .sliderContent{
         height: 25%;
-        margin-bottom: 10%;
+        margin-bottom: 0%;
     }
     .title{
         width: 98%;
@@ -129,7 +130,15 @@
     }
     .pager{
         transform: scale(0.6);
-        margin-left: -6%;
-        top: 15%;
+        margin-left: -5%;
+        top: 5%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .title{
+        font-size: 20px;
+    }
+    .pager{
+        margin-left: -7.5%;
     }
 }
