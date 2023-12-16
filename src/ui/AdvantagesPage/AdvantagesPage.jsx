@@ -40,6 +40,7 @@ function AdvantagesPage() {
         }
     ]
     return (
+        <a href="#store" className="toDownLInk">
         <div className={advantagesStyles.container} id="advantages">
             <h1 className="title">ԱՌԱՎԵԼՈՒԹՅՈՒՆՆԵՐ</h1>
             <div className={advantagesStyles.cards}>
@@ -48,6 +49,7 @@ function AdvantagesPage() {
                 })}
             </div>
         </div>
+        </a>
     )
 }
 

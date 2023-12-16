@@ -1,8 +1,8 @@
 import WindowCard from "../WindowCard/WindowCard"
 
-function Windows({ selected, setSelected, windowCards, styles, forMobile = false }) {
+function Windows({ selected, setSelected, windowCards, styles }) {
     return (
-        <div className={styles.windows + (forMobile ? " "+styles.forMobile : "")}>
+        <div className={styles.windows} onClick={(e) => { e.preventDefault() }} >
             <div className={styles.absoluteBackground}></div>
             {
                 windowCards.map((item, index) => {

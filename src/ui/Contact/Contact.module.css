@@ -31,6 +31,7 @@
 }
 
 .socialMedia>div p {
+  font-size: 18px;
   margin-top: 10px;
   font-family: "Segoe UI";
 }
@@ -41,7 +42,7 @@
 
 .footer>p>span {
   color: #787A83;
-  font-size: 14px;
+  font-size: 16px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: 400;

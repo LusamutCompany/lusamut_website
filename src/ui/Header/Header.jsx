@@ -37,10 +37,6 @@ function Header() {
                        <a href="tel:+37498123456"><p className={headerStyles.phoneNumber}>+374 98 123 456</p></a> 
                         <a href="#contact"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
                     </div>
-                    <div className={headerStyles.languages}>
-                        <p>Eng</p>
-                        <p className={headerStyles.selected}>Հայ</p>
-                    </div>
                 </div>
             </div>
             <div className={headerStyles.mobileHeader}>

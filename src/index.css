@@ -24,6 +24,10 @@ button {
   line-height: normal;
   letter-spacing: 2.4px;
 }
+.toDownLInk{
+  cursor: default;
+  color: unset;
+}
 @media screen and (max-width: 1060px) {
   html{
     scroll-padding: 88px;

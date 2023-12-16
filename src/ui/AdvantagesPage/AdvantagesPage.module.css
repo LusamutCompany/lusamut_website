@@ -5,13 +5,13 @@
     background: #F8F8F8;
     text-align: center;
     display: flex;
-    flex-direction: column; 
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .cards {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -20,29 +20,28 @@
 
 
 
-
-
-@media  screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .container {
         min-height: 800px;
     }
-    .cards{
+
+    .cards {
         justify-content: space-around;
     }
 }
 
-@media  screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .container {
         height: 1370px;
     }
 }
 
-@media  screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .container {
         height: 1080px;
     }
-    .cards{
+
+    .cards {
         justify-content: center;
     }
 }
-

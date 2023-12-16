@@ -1,30 +1,34 @@
 import { useEffect, useState } from "react"
 import sliderStyles from "./Slider.module.css"
+import sliderImage from "../../assets/jpgs/sliderImage.jpg"
+import sliderImage2 from "../../assets/jpgs/sliderImage2.jpg"
+import sliderImage3 from "../../assets/jpgs/sliderImage3.jpg"
+import sliderImage4 from "../../assets/pngs/sliderImage4.png"
 const pages = [
     {
-        image: "https://s3-alpha-sig.figma.com/img/9c22/89ca/bcd2fb39f01c030771325031535f15b4?Expires=1702857600&Signature=TvOWaCUa-w2TNVQIChovllJ8bFRqit-NDkHmR8SDDKqCO7LrI9Ocfmv48-j8vuvjNlP7sd4NXP08xYr73Kx74lpzLsqesotsXEH6qzaF9XZnOfJ2aeJru8c18Fg~GGJl3fyBZX4Jxxrse7dAyTKbtMiWMK1hg5fCAlJwzaCQg-z8ZMPj3A66Wo87bqliX~S69wFvBqNHq-hxbFpEdrrx1ca0hu8d8PKakFCQONZD0z-ARs6NBnxvlG2E94yL6xHAvWr9Hbhb802szeKUFZH5IJ1Ndv9antK7kbicikzBOTFpDVL69ETY8BfA7bZN-p2MAelWff6zNFyUU4MvPCDreQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-        title: "մետաղապլաստե դռների և պատուհանների լայն տեսականի",
-        description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով",
-        index: 0,
-    },
-    {
-        image: "https://s3-alpha-sig.figma.com/img/9c22/89ca/bcd2fb39f01c030771325031535f15b4?Expires=1702857600&Signature=TvOWaCUa-w2TNVQIChovllJ8bFRqit-NDkHmR8SDDKqCO7LrI9Ocfmv48-j8vuvjNlP7sd4NXP08xYr73Kx74lpzLsqesotsXEH6qzaF9XZnOfJ2aeJru8c18Fg~GGJl3fyBZX4Jxxrse7dAyTKbtMiWMK1hg5fCAlJwzaCQg-z8ZMPj3A66Wo87bqliX~S69wFvBqNHq-hxbFpEdrrx1ca0hu8d8PKakFCQONZD0z-ARs6NBnxvlG2E94yL6xHAvWr9Hbhb802szeKUFZH5IJ1Ndv9antK7kbicikzBOTFpDVL69ETY8BfA7bZN-p2MAelWff6zNFyUU4MvPCDreQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        image: sliderImage,
         title: "մետաղապլաստե դռների և պատուհանների լայն տեսականի2",
         description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով2",
         index: 1,
     },
     {
-        image: "https://s3-alpha-sig.figma.com/img/9c22/89ca/bcd2fb39f01c030771325031535f15b4?Expires=1702857600&Signature=TvOWaCUa-w2TNVQIChovllJ8bFRqit-NDkHmR8SDDKqCO7LrI9Ocfmv48-j8vuvjNlP7sd4NXP08xYr73Kx74lpzLsqesotsXEH6qzaF9XZnOfJ2aeJru8c18Fg~GGJl3fyBZX4Jxxrse7dAyTKbtMiWMK1hg5fCAlJwzaCQg-z8ZMPj3A66Wo87bqliX~S69wFvBqNHq-hxbFpEdrrx1ca0hu8d8PKakFCQONZD0z-ARs6NBnxvlG2E94yL6xHAvWr9Hbhb802szeKUFZH5IJ1Ndv9antK7kbicikzBOTFpDVL69ETY8BfA7bZN-p2MAelWff6zNFyUU4MvPCDreQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        image: sliderImage2,
         title: "մետաղապլաստե դռների և պատուհանների լայն տեսականի3",
         description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով3",
         index: 2,
     },
     {
-        image: "https://s3-alpha-sig.figma.com/img/9c22/89ca/bcd2fb39f01c030771325031535f15b4?Expires=1702857600&Signature=TvOWaCUa-w2TNVQIChovllJ8bFRqit-NDkHmR8SDDKqCO7LrI9Ocfmv48-j8vuvjNlP7sd4NXP08xYr73Kx74lpzLsqesotsXEH6qzaF9XZnOfJ2aeJru8c18Fg~GGJl3fyBZX4Jxxrse7dAyTKbtMiWMK1hg5fCAlJwzaCQg-z8ZMPj3A66Wo87bqliX~S69wFvBqNHq-hxbFpEdrrx1ca0hu8d8PKakFCQONZD0z-ARs6NBnxvlG2E94yL6xHAvWr9Hbhb802szeKUFZH5IJ1Ndv9antK7kbicikzBOTFpDVL69ETY8BfA7bZN-p2MAelWff6zNFyUU4MvPCDreQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        image: sliderImage3,
         title: "մետաղապլաստե դռների և պատուհանների լայն տեսականի4",
         description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով4",
         index: 3,
     },
+    {
+        image: sliderImage4,
+        title: "մետաղապլաստե դռների և պատուհանների լայն տեսականի",
+        description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով",
+        index: 0,
+    }
 ]
 function Slider() {
     const [index, setIndex] = useState(0)
@@ -39,7 +43,8 @@ function Slider() {
         }, 1000)
     }, [index])
     return (
-        <div className={sliderStyles.slider} style={{backgroundImage: `url(${pages[index].image})`}} id="home">
+        <a href="#advantages" className="toDownLInk">
+            <div className={sliderStyles.slider} style={{backgroundImage: `url(${pages[index].image})`}} id="home">
             <div className={sliderStyles.sliderContent}>
                 <h1 className={sliderStyles.title}>{pages[index].title}</h1>
                 <p className={sliderStyles.description}>{pages[index].description}</p>
@@ -50,6 +55,7 @@ function Slider() {
                 </div>
             </div>
         </div>
+        </a>
     )
 }
 

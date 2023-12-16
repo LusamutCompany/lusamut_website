@@ -472,18 +472,22 @@ function Store() {
         }
     ]
     return (
-        <div id="store" className={storeStyles.store}>
-            <h1 className="title">
-                տեսականի
-            </h1>
-            <Windows selected={selected} setSelected={setSelected} windowCards={windowCards} styles={storeStyles}/>
-            <div className={storeStyles.windowProperties}>
-                {windowCards[selected].windowTypes.map((windowType, index) => {
-                    return <WindowPropertyCard image={windowType.image} props1={windowType.prop1} props2={windowType.prop2} key={index} />
-                })}
+        <a href="#about" className="toDownLInk">
+            <div id="store" className={storeStyles.store}>
+                <h1 className="title">
+                    տեսականի
+                </h1>
+                <Windows selected={selected}
+                    setSelected={setSelected}
+                    windowCards={windowCards}
+                    styles={storeStyles}/>
+                <div className={storeStyles.windowProperties}>
+                    {windowCards[selected].windowTypes.map((windowType, index) => {
+                        return <WindowPropertyCard image={windowType.image} props1={windowType.prop1} props2={windowType.prop2} key={index} />
+                    })}
+                </div>
             </div>
-            <Windows selected={selected} setSelected={setSelected} windowCards={windowCards} styles={storeStyles} forMobile/>
-        </div>
+        </a>
     )
 }
 export default Store

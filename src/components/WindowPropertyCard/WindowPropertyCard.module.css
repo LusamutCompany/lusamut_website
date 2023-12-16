@@ -12,25 +12,25 @@
 }
 
 .properties p {
-    width: 97.992px;
+    width: 100px;
     height: 27.24px;
     color: #575757;
     font-family: Segoe UI;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 .title {
     color: #000;
     font-family: Segoe UI;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
     letter-spacing: 0.64px;
 }
 
 .price {
     color: #F45D11;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     letter-spacing: 0.8px;
 }
@@ -38,7 +38,7 @@
 .price>span {
     color: #000;
     font-family: Segoe UI;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.48px;
 }
 @media screen and (max-width: 1300px) {

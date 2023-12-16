@@ -2,14 +2,13 @@
     width: 100%;
     height: calc(100vh - 125px);
     margin-top: 125px;
-    /* background: #202020; */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 5px;
+    display: flex;
 }
 
 .sliderContent {
