@@ -24,19 +24,77 @@ button {
   line-height: normal;
   letter-spacing: 2.4px;
 }
-.toDownLInk{
+
+.toDownLInk {
   cursor: default;
   color: unset;
 }
+
+.arrows {
+  width: 90%;
+  height: calc(100% + 62.5px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: 6.25%;
+  margin-top: -125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border: solid 10px white;
+  border-left: none;
+  border-top: none;
+  opacity: 0.8;
+  transform: rotateZ(135deg);
+  cursor: pointer;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.arrow:active {
+  border-color: black;
+}
+
+.arrow2 {
+  transform: rotateZ(-45deg);
+}
+
+#about>.arrows{
+  width: 95%;
+  height: 630px;
+  margin: auto;
+  margin-top: 0;
+}
+#about .arrow{
+  border-color: black;
+}
+#about .arrow:active{
+  border-color: white;
+}
+
 @media screen and (max-width: 1060px) {
-  html{
+  html {
     scroll-padding: 88px;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .title {
     font-size: 45px;
     letter-spacing: 1.04px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .arrows {
+    display: none;
   }
 }
 

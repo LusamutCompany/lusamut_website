@@ -181,7 +181,7 @@ font-weight: 400;
   }
   .map{
     width: 100%;
-    height: 550px;
+    height: 420px;
   }
   .socialMedia {
     width: 100%;
@@ -191,11 +191,6 @@ font-weight: 400;
 }
 
 @media only screen and (max-width: 680px) {
-  .map {
-    width: 100%;
-    height: 430px;
-  }
-
   .contactForm {
     width: 100% !important;
     height: 430px;
@@ -229,6 +224,6 @@ font-weight: 400;
 
 @media only screen and (max-width: 400px) {
   .socialMedia {
-    height: 322px ;
+    height: 322px;
   }
 }
