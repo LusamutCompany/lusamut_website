@@ -52,6 +52,7 @@ button {
   opacity: 0.8;
   transform: rotateZ(135deg);
   cursor: pointer;
+  z-index: 10;
 }
 
 .arrow:hover {
@@ -66,13 +67,13 @@ button {
   transform: rotateZ(-45deg);
 }
 
-#about>.arrows{
+#about>.arrows, #store .arrows{
   width: 95%;
-  height: 630px;
+  height: 100%;
   margin: auto;
   margin-top: 0;
 }
-#about .arrow{
+#about .arrow, #store .arrow{
   border-color: black;
 }
 #about .arrow:active{
