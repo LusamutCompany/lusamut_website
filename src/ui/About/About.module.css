@@ -88,7 +88,7 @@
 
 @media screen and (max-width: 800px) {
   .about {
-    height: 800px;
+    height: 600px;
     flex-direction: column-reverse;
   }
   .about>div{
@@ -101,12 +101,12 @@
     justify-content: space-evenly;
  }
   .aboutText>h1 {
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 0;
   }
 
   .aboutText>p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
