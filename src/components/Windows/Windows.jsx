@@ -8,6 +8,7 @@ function Windows({ selected, setSelected, windowCards, styles }) {
                 windowCards.map((item, index) => {
                     return (
                         <WindowCard
+                            type={item.type}
                             key={index}
                             image={item.image}
                             title={item.title}

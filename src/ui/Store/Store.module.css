@@ -15,7 +15,7 @@
     height: 280px;
     background: #F9F9FC;
     position: relative;
-    top: 71px;
+    top: 110px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -99,7 +99,7 @@
 
 @media screen and (max-width: 685px) {
     .store{
-        height: 2084px;
+        height: 1710px;
     }
     .absoluteBackground{
         display: block;
@@ -135,7 +135,7 @@
 
 @media screen and (max-width: 610px) {
     .store {
-        height: 2124px;
+        height: 1684px;
     }
     .windowProperties {
         margin-top: 40px;
@@ -144,7 +144,7 @@
 
 @media screen and (max-width: 560px) {
     .store {
-        height: 3054px;
+        height: 2554px;
     }
     .windowProperties {
         margin-top: 20px;
@@ -153,13 +153,12 @@
 
 @media screen and (max-width: 490px) {
     .store {
-        height: 3464px;
+        height: 2964px;
     }
 }
 
 @media screen and (max-width: 390px) {
     .store {
-        height: 3114px;
+        height: 2514px;
     }
-
 }

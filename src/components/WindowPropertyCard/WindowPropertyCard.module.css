@@ -80,3 +80,14 @@
         margin-top: 50px;
     }
 }
+@media screen and (max-width: 310px) {
+    .title{
+        font-size: 13.5px;
+    }
+    .price{
+        font-size: 20px;
+    }
+    .properties p{
+        font-size: 12px;
+    }
+}

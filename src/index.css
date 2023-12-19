@@ -84,7 +84,11 @@ button {
     scroll-padding: 88px;
   }
 }
-
+@media screen and (max-width: 1024px) {
+  .arrows {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .title {
     font-size: 45px;
@@ -92,11 +96,7 @@ button {
   }
 }
 
-@media screen and (max-width: 685px) {
-  .arrows {
-    display: none;
-  }
-}
+
 
 @media only screen and (max-width: 600px) {
   .title {

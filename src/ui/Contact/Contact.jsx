@@ -1,7 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { useRef, useEffect, useState } from 'react';
 import contactStyles from "./Contact.module.css"
-// add promps to name inputs make it good
 const serviceID = 'default_service';
 const templateID = 'template_ypcs4ke';
 function Contact() {
@@ -98,7 +97,7 @@ function Contact() {
                     </div>
                 </div>
                 <div className={contactStyles.map}>
-                    <a href="https://yandex.ru/maps/org/lusamut_am/172824248383/?utm_medium=mapframe&utm_source=maps" style={{ color: "#eee", fontSize: "12px", position: "absolute", top: "0px" }}>Lusamut. am</a><a href="https://yandex.ru/maps/10262/yerevan/category/doors/184107677/?utm_medium=mapframe&utm_source=maps" style={{ color: "#eee", fontSize: "12px", position: "absolute", top: "14px" }}>Դռներ  </a>
+                    <a href="https://yandex.ru/maps/org/lusamut_am/172824248383/?utm_medium=mapframe&utm_source=maps" style={{ color: "#eee", fontSize: "12px", position: "absolute", top: "0px" }}>Lusamut. am</a><a href="https://yandex.ru/maps/10262/yerevan/category/doors/184107677/?utm_medium=mapframe&utm_source=maps" style={{ color: "#eee", fontSize: "12px", position: "absolute", top: "14px"}}>Դռներ  </a>
                     <a href="https://yandex.ru/maps/10262/yerevan/category/windows/184107727/?utm_medium=mapframe&utm_source=maps" style={{ color: "#eee", fontSize: "12px", position: "absolute", top: "28px" }}>Լուսամուտներ / Լուսամուտների խանութ  </a>
                     <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=44.489747%2C40.179289&mode=search&oid=172824248383&ol=biz&z=17.05" width="100%" height="100%" allowFullScreen={true} style={{ position: "relative" }}></iframe>
                 </div>
