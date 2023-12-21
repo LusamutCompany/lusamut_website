@@ -53,10 +53,6 @@ function Header() {
                     })}
                     </div>
                     <a href="#contact"><button className={headerStyles.contactButton} onClick={closeMenu}>ԿԱՊՎԵԼ</button></a>
-                    <div className={headerStyles.languages}>
-                        <p>Eng</p>
-                        <p className={headerStyles.selected}>Հայ</p>
-                    </div>
                 </div>
             ) : ""}
         </section>

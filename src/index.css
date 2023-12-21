@@ -69,7 +69,7 @@ button {
 
 #about>.arrows, #store .arrows{
   width: 95%;
-  height: 100%;
+  height: 630px;
   margin: auto;
   margin-top: 0;
 }
@@ -79,7 +79,6 @@ button {
 #about .arrow:active{
   border-color: white;
 }
-
 @media screen and (max-width: 1060px) {
   html {
     scroll-padding: 88px;

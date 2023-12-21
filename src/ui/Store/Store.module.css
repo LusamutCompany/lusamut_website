@@ -1,6 +1,6 @@
 .store {
     width: 100%;
-    height: 1200px;
+    height: 1300px;
     min-height: auto;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -12,9 +12,8 @@
 
 .windows {
     width: 100vw;
-    height: 300px;
-    background: #F9F9FC;
-    margin-top: 110px;
+    min-height: 370px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -43,18 +42,16 @@
 }
 .windowProperties {
     width: 100vw;
-    height: 565px;
+    height: 485px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background: white;
 }
 
 .absoluteBackground {
-    display: none;
     width: 100vw;
-    height: 160px;
+    height: 300px;
     background: #F9F9FC;
     position: absolute;
     z-index: -1;
@@ -63,7 +60,7 @@
 @media screen and (max-width: 1300px) {
     .store {
         width: 100%;
-        height: 969px;
+        height: 1069px;
     }
 
     .windowProperties {
@@ -73,7 +70,7 @@
 
 @media screen and (max-width: 1065px) {
     .store {
-        height: 1480px;
+        height: 1580px;
     }
 
     .store>h1 {
@@ -89,20 +86,20 @@
 
 @media screen and (max-width: 955px) {
     .store {
-        height: 1400px;
+        height: 1500px;
     }
 }
 
 @media screen and (max-width: 740px) {
     .store {
-        height: 2400px;
+        height: 1900px;
     }
 }
 
 
 @media screen and (max-width: 685px) {
     .store {
-        height: 1710px;
+        height: 1810px;
     }
 
     .absoluteBackground {
@@ -122,7 +119,7 @@
 
 @media screen and (max-width: 610px) {
     .store {
-        height: 1684px;
+        height: 1784px;
     }
 
     .windowProperties {
@@ -132,7 +129,7 @@
 
 @media screen and (max-width: 560px) {
     .store {
-        height: 2554px;
+        height: 2685px;
     }
 
     .windowProperties {
@@ -142,12 +139,12 @@
 
 @media screen and (max-width: 490px) {
     .store {
-        height: 2964px;
+        height: 3064px;
     }
 }
 
 @media screen and (max-width: 390px) {
     .store {
-        height: 2514px;
+        height: 2685px;
     }
 }
