@@ -142,6 +142,7 @@
     .pager{
         bottom: calc(35vh + 10px);
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -166,5 +167,45 @@
 @media screen and (max-width: 480px) {
     .title {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-height: 770px) {
+    .sliderContainer {
+        width: 100vw;
+        height: calc(50vh + 125px);
+    }
+    .pager{
+        bottom: calc(15vh + 20px);
+    }
+}
+@media screen and (max-height: 700px) {
+    .pager{
+        bottom: calc(12vh + 20px);
+    }
+}
+@media screen and (max-height: 640px) {
+    .pager{
+        bottom: calc(10vh + 10px);
+    }
+}
+@media screen and (max-height: 580px) {
+    .pager{
+        bottom: 9vh;
+    }
+}
+@media screen and (max-height: 525px) {
+    .pager{
+        bottom: calc(7vh - 10px);
+    }
+}
+@media screen and (max-height: 500px) {
+    .pager{
+        bottom: calc(7vh - 20px);
+    }
+}
+@media screen and (max-height: 480px) {
+    .pager{
+        bottom: calc(7vh - 30px);
     }
 }
