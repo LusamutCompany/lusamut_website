@@ -614,7 +614,7 @@ function Store() {
                     setSelected={setSelected}
                     windowCards={windowCards}
                     styles={storeStyles}/>
-                <div className={storeStyles.windowProperties}>
+                <div className={storeStyles.windowProperties} id="windowProperties">
                     {selected!==null ? windowCards[selected].windowTypes.map((windowType, index) => {
                         return <WindowPropertyCard image={windowType.image} width={windowType.width} height={windowType.height} props1={windowType.prop1} props2={windowType.prop2} key={index} />
                     }):""}

@@ -1,12 +1,19 @@
 .card {
     width: 238px;
-    height: 565px;
+    height: 50px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    opacity: 0;
+    animation: smoothAppear 1 1s forwards; 
 }
-
+@keyframes smoothAppear{
+    100%{
+        opacity: 1;
+        height: 565px;
+    }
+}
 .properties {
     display: flex;
 }

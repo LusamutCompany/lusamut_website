@@ -1,6 +1,5 @@
 .store {
     width: 100%;
-    height: 1300px;
     min-height: auto;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -21,7 +20,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -36,16 +35,11 @@
     display: none;
 }
 
-.windows {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
 .windowProperties {
     width: 100vw;
-    height: 485px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -54,54 +48,23 @@
     height: 300px;
     background: #F9F9FC;
     position: absolute;
+    left: 0;
     z-index: -1;
 }
 
-@media screen and (max-width: 1300px) {
-    .store {
-        width: 100%;
-        height: 1069px;
-    }
-
-    .windowProperties {
-        height: 320px;
-    }
-}
+@media screen and (max-width: 1300px) {}
 
 @media screen and (max-width: 1065px) {
-    .store {
-        height: 1580px;
-    }
-
     .store>h1 {
         font-size: 40px;
         padding-left: 80px;
     }
-
-    .windowProperties {
-        height: 465px;
-        margin-top: 120px;
-    }
 }
 
-@media screen and (max-width: 955px) {
-    .store {
-        height: 1500px;
-    }
-}
-
-@media screen and (max-width: 740px) {
-    .store {
-        height: 1900px;
-    }
-}
+@media screen and (max-width: 955px) {}
 
 
 @media screen and (max-width: 685px) {
-    .store {
-        height: 1810px;
-    }
-
     .absoluteBackground {
         display: block;
     }
@@ -110,41 +73,9 @@
         position: inherit;
         margin-top: 70px;
     }
-
-    .windowProperties {
-        margin-top: 80px;
-    }
 }
 
 
-@media screen and (max-width: 610px) {
-    .store {
-        height: 1784px;
-    }
+@media screen and (max-width: 580px) {}
 
-    .windowProperties {
-        margin-top: 40px;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .store {
-        height: 2685px;
-    }
-
-    .windowProperties {
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 490px) {
-    .store {
-        height: 3064px;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .store {
-        height: 2685px;
-    }
-}
+@media screen and (max-width: 390px) {}

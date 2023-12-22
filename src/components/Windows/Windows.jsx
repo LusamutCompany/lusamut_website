@@ -26,7 +26,7 @@ function Windows({ selected, setSelected, windowCards, styles }) {
         windowsRef.current.scrollBy({ left: -window.innerHeight })
     }
     return (
-        <div className={styles.windows} onClick={(e) => { e.preventDefault() }} ref={windowsRef}>
+        <div className={styles.windows} ref={windowsRef}>
             <div className={styles.absoluteBackground}></div>
             <div className="arrows">
                 <div className="arrow" onClick={moveLeft}></div>
