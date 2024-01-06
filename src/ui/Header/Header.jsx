@@ -8,6 +8,7 @@ import { useState } from "react"
 
 function Header() {
     let [isOpen, setIsOpen] = useState(false)
+    let [openedPage, setOpenedPage] = useState(0)
     let openMenu = () => {
         setIsOpen(true)
     }
@@ -27,14 +28,20 @@ function Header() {
                 <img className={headerStyles.companyLogo} src={logo} width="220px" height="77px" />
                 <div className={headerStyles.pages}>
                     {pages.map((item, index) => {
-                        return <a key={index} href={item[1]} className={headerStyles.page}><h1>{item[0]}</h1></a>
+                        return <a
+                            key={index}
+                            href={item[1]}
+                            className={headerStyles.page}
+                            onClick={() => { setOpenedPage(index) }}>
+                            <h1 style={{ color: index === openedPage ? "#000" : "" }}>{item[0]}</h1>
+                        </a>
                     })}
                 </div>
             </div>
             <div className={headerStyles.extras}>
                 <div>
                     <div className={headerStyles.contact}>
-                       <a href="tel:+37498123456"><p className={headerStyles.phoneNumber}>+374 98 123 456</p></a> 
+                        <a href="tel:+37498123456"><p className={headerStyles.phoneNumber}>+374 98 123 456</p></a>
                         <a href="#contact"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
                     </div>
                 </div>
@@ -46,11 +53,17 @@ function Header() {
             </div>
             {isOpen ? (
                 <div className={headerStyles.mobileMenu}>
-                    <img src={closeMenuIcon} alt="" width="32px" height="32px" className={headerStyles.closeIcon} onClick={closeMenu}/>
+                    <img src={closeMenuIcon} alt="" width="32px" height="32px" className={headerStyles.closeIcon} onClick={closeMenu} />
                     <div className={headerStyles.mobilePages}>
-                    {pages.map((item, index) => {
-                        return <a key={index} href={item[1]} className={headerStyles.page} onClick={closeMenu}><h1>{item[0]}</h1></a>
-                    })}
+                        {pages.map((item, index) => {
+                            return <a
+                                key={index}
+                                href={item[1]}
+                                className={headerStyles.page}
+                                onClick={() => { setOpenedPage(index); closeMenu() }}>
+                                <h1 style={{ color: index === openedPage ? "#000" : "" }}>{item[0]}</h1>
+                            </a>
+                        })}
                     </div>
                     <a href="#contact"><button className={headerStyles.contactButton} onClick={closeMenu}>ԿԱՊՎԵԼ</button></a>
                 </div>

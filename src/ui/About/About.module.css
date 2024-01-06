@@ -1,27 +1,13 @@
 .aboutContainer{
   width: 100%;
   height: 630px;
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-.aboutContainer::-webkit-scrollbar {
-  display: none;
-}
-
-.aboutContainer {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  overflow: hidden;
 }
 .about {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   background-color: #F8F8F8;
-  display: flex;
+  display: flex !important;
 }
 .about>div{
   width: 50%;
@@ -45,11 +31,10 @@
 
 
 .aboutImageContainer {
+  height: 630px !important;
   display: flex;
   justify-content: flex-end;
 }
-
-
 @media screen and (max-width: 1553px) {
   .aboutText>h1 {
     font-size: 55px;
@@ -60,6 +45,9 @@
 }
 
 @media screen and (max-width: 1350px) {
+  .aboutContainer{
+    height: auto;
+  }
   .about {
     height: 450px;
   }
@@ -137,16 +125,16 @@
     height: 264px;
   }
   .aboutText{
-    height: 351px;
+    height: 301px;
     padding: 40px;
+  }
+  .aboutText>h1{
+    line-height: 36px;
   }
 }
 @media screen and (max-width: 360px) {
-  .about{
-    min-height: 1000px;
-  }
   .aboutText>h1{
-    line-height: 2px;
+    line-height: 28px;
   }
   .aboutText>p{
     line-height: 1.5;

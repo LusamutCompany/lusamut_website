@@ -1,34 +1,27 @@
 .sliderContainer {
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 125px);
     margin-top: 125px;
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+    overflow: hidden;
 }
 
-.sliderContainer::-webkit-scrollbar {
-    display: none;
+.sliderDiv {
+    width: 100%;
+    height: calc(100vh - 125px);
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    padding-bottom: 50px;
 }
 
-.sliderContainer {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.slider {
-    min-width: 100%;
+.sliderImage {
+    width: 100vw;
     height: 100%;
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 50px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 .sliderContent {
@@ -54,26 +47,6 @@
     font-size: 24px;
     font-weight: 700;
 }
-
-.pager {
-    width: 100px;
-    height: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 10px;
-    left: 7%;
-}
-
-.pager>div {
-    width: 20%;
-    min-height: 20px;
-    background: white;
-    clip-path: polygon(25% 25%, 50% 10%, 75% 25%, 75% 75%, 25% 75%);
-    transform: scale(2);
-}
-
 @media screen and (max-width: 1400px) {
     .sliderContent {
         height: 25%;
@@ -90,6 +63,10 @@
         margin-top: 88px;
     }
 
+    .sliderDiv {
+        height: calc(100vh - 88px);
+    }
+
     .sliderContent {
         height: 20%;
     }
@@ -101,11 +78,6 @@
     .description {
         font-size: 22px;
     }
-
-    .pager {
-        transform: scale(0.9);
-        margin-left: -0.5%;
-    }
 }
 
 @media screen and (max-width: 880px) {
@@ -116,14 +88,18 @@
     .description {
         font-size: 18px;
     }
-
-    .pager {
-        transform: scale(0.7);
-        margin-left: -2.5%;
-    }
+    
 }
 
 @media screen and (max-width: 680px) {
+    .sliderContainer {
+        height: calc(70vh - 125px);
+    }
+
+    .sliderDiv {
+        height: calc(70vh - 125px);
+    }
+
     .title {
         width: 90%;
         font-size: 26px;
@@ -135,14 +111,6 @@
         font-size: 12px;
         line-height: 18px;
     }
-    .sliderContainer {
-        width: 100vw;
-        height: calc(70vh - 125px);
-    }
-    .pager{
-        bottom: calc(35vh + 10px);
-    }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -167,45 +135,5 @@
 @media screen and (max-width: 480px) {
     .title {
         font-size: 20px;
-    }
-}
-
-@media screen and (max-height: 770px) {
-    .sliderContainer {
-        width: 100vw;
-        height: calc(50vh + 125px);
-    }
-    .pager{
-        bottom: calc(15vh + 20px);
-    }
-}
-@media screen and (max-height: 700px) {
-    .pager{
-        bottom: calc(12vh + 20px);
-    }
-}
-@media screen and (max-height: 640px) {
-    .pager{
-        bottom: calc(10vh + 10px);
-    }
-}
-@media screen and (max-height: 580px) {
-    .pager{
-        bottom: 9vh;
-    }
-}
-@media screen and (max-height: 525px) {
-    .pager{
-        bottom: calc(7vh - 10px);
-    }
-}
-@media screen and (max-height: 500px) {
-    .pager{
-        bottom: calc(7vh - 20px);
-    }
-}
-@media screen and (max-height: 480px) {
-    .pager{
-        bottom: calc(7vh - 30px);
     }
 }
