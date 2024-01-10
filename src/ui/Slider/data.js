@@ -16,27 +16,12 @@ export default [
         description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով",
     },
     {
-        image: sliderImage,
-        title: "մետաղապլաստե դռների և պատուհանների լայն տեսականի",
-        description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով",
-    },
-    {
-        image: sliderImage2,
-        title: "",
-        description: "",
-    },
-    {
         image: sliderImage3,
         title: "",
         description: "",
     },
     {
         image: sliderImage4,
-        title: "",
-        description: "",
-    },
-    {
-        image: sliderImage5,
         title: "",
         description: "",
     },

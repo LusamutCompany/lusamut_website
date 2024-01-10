@@ -8,31 +8,31 @@ export default [
     {
         image: PrizeIcon,
         title: "3-րդն աշխարհում",
-        description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով"
+        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
     },
     {
         image: CalendarIcon,
         title: "80 տարի շուկայում",
-        description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով"
+        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
     },
     {
         image: CheckIcon,
         title: "32 հսկիչ պարամետրեր",
-        description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով"
+        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
     },
     {
         image: EcoIcon,
         title: "Էկոլոգիապես մաքուր արտադրանք",
-        description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով"
+        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
     },
     {
         image: GuaranteeIcon,
-        title: "10 տարի երաշխիք",
-        description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով"
+        title: "10 տարվա երաշխիք",
+        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
     },
     {
         image: MedalIcon,
         title: "Ամենաբարձր վարկանիշ",
-        description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով"
+        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
     }
 ]
