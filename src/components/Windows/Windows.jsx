@@ -10,7 +10,7 @@ function Windows({ selected, setSelected, windowCards, styles }) {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         speed: 1000,
@@ -19,27 +19,13 @@ function Windows({ selected, setSelected, windowCards, styles }) {
         pauseOnHover: true,
         responsive: [
             {
-                breakpoint: 1800,
-                settings: {
-                    slidesToShow: 4,
-                }
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                }
-            },
-            {
-                breakpoint: 800,
+                breakpoint: 1000,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 650,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -58,10 +44,10 @@ function Windows({ selected, setSelected, windowCards, styles }) {
     return (
         <div className={styles.windows}>
             <div className={styles.absoluteBackground}></div>
-            <div className="arrows">
+            {/* <div className="arrows">
                 <div className="arrow" onClick={moveLeft}></div>
                 <div className="arrow arrow2" onClick={moveRight}></div>
-            </div>
+            </div> */}
             <div>
             <SlickSlider {...settings} ref={sliderRef} className={styles.slider}>
                 {

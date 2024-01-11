@@ -12,7 +12,7 @@ export default [
     },
     {
         image: CalendarIcon,
-        title: "80 տարի շուկայում",
+        title: "85 տարի շուկայում",
         description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
     },
     {

@@ -295,283 +295,97 @@ export default [
             },
         ]
     },
-    {
-        type: "Դուռ",
-        image: windowImage2,
-        title: "Deceuninck Favorit",
-        properties: {
-            mechanism: "Maco / Hoppe",
-            iron: "1.5մմ",
-            cells: "6 հատ",
-            glass: "36 մմ (4+4)"
-        },
-        windowTypes: [
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "571 6100",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
+    // {
+    //     type: "Դուռ",
+    //     image: windowImage2,
+    //     title: "Deceuninck Favorit",
+    //     properties: {
+    //         mechanism: "Maco / Hoppe",
+    //         iron: "1.5մմ",
+    //         cells: "6 հատ",
+    //         glass: "36 մմ (4+4)"
+    //     },
+    //     windowTypes: [
+    //         {
+    //             image: "",
+    //             prop1: {
+    //                 model: "ALD71-0000",
+    //                 title: "Սպիտակ",
+    //                 price: "17 600",
+    //                 info: "Ապառիկ 6 ամսով 0% մ / 9 600"
 
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "57 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
+    //             },
+    //             prop2: {
+    //                 model: "BLD71-0000",
+    //                 title: "Lամինացված",
+    //                 price: "711 500",
+    //                 info: "Ապառիկ 6 ամսով 0% մ / 11 916",
+    //             }
+    //         },
+    //         {
+    //             image: "",
+    //             prop1: {
+    //                 model: "ALD71-0000",
+    //                 title: "Սպիտակ Text",
+    //                 price: "51 650",
+    //                 info: "Ապառիկ 6 ամսով 0% մ / 9 600"
 
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "57 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
+    //             },
+    //             prop2: {
+    //                 model: "BLD71-0000",
+    //                 title: "Lամինացված yeah",
+    //                 price: "71 500",
+    //                 info: "Ապառիկ 6 ամսով 0% մ / 11 916",
+    //             }
+    //         },
+    //         {
+    //             image: "",
+    //             prop1: {
+    //                 model: "ALD71-0000",
+    //                 title: "Սպիտակ",
+    //                 price: "57 600",
+    //                 info: "Ապառիկ 6 ամսով 0% մ / 9 600"
 
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "57 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
+    //             },
+    //             prop2: {
+    //                 model: "BLD71-0000",
+    //                 title: "Lամինացված",
+    //                 price: "71 500",
+    //                 info: "Ապառիկ 6 ամսով 0% մ / 11 916",
+    //             }
+    //         },
+    //         {
+    //             image: "",
+    //             prop1: {
+    //                 model: "ALD71-0000",
+    //                 title: "Սպիտակ",
+    //                 price: "57 600",
+    //                 info: "Ապառիկ 6 ամսով 0% մ / 9 600"
 
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "57 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
+    //             },
+    //             prop2: {
+    //                 model: "BLD71-0000",
+    //                 title: "Lամինացված",
+    //                 price: "71 500",
+    //                 info: "Ապառիկ 6 ամսով 0% մ / 11 916",
+    //             }
+    //         },
+    //         {
+    //             image: "",
+    //             prop1: {
+    //                 model: "ALD71-0000",
+    //                 title: "Սպիտակ",
+    //                 price: "57 600",
+    //                 info: "Ապառիկ 6 ամսով 0% մ / 9 600"
 
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            }
-        ]
-    },
-    {
-        type: "Դուռ",
-        image: windowImage2,
-        title: "Deceuninck Favorit",
-        properties: {
-            mechanism: "Maco / Hoppe",
-            iron: "1.5մմ",
-            cells: "6 հատ",
-            glass: "36 մմ (4+4)"
-        },
-        windowTypes: [
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "17 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
-
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "711 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ Text",
-                    price: "51 650",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
-
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված yeah",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "57 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
-
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "57 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
-
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "57 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
-
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            }
-        ]
-    },
-    {
-        type: "Դուռ",
-        image: windowImage2,
-        title: "Deceuninck Favorit",
-        properties: {
-            mechanism: "Maco / Hoppe",
-            iron: "1.5մմ",
-            cells: "6 հատ",
-            glass: "36 մմ (4+4)"
-        },
-        windowTypes: [
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "17 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
-
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "711 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ Text",
-                    price: "51 650",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
-
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված yeah",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "57 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
-
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "57 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
-
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            },
-            {
-                image: "",
-                prop1: {
-                    model: "ALD71-0000",
-                    title: "Սպիտակ",
-                    price: "57 600",
-                    info: "Ապառիկ 6 ամսով 0% մ / 9 600"
-
-                },
-                prop2: {
-                    model: "BLD71-0000",
-                    title: "Lամինացված",
-                    price: "71 500",
-                    info: "Ապառիկ 6 ամսով 0% մ / 11 916",
-                }
-            }
-        ]
-    }
+    //             },
+    //             prop2: {
+    //                 model: "BLD71-0000",
+    //                 title: "Lամինացված",
+    //                 price: "71 500",
+    //                 info: "Ապառիկ 6 ամսով 0% մ / 11 916",
+    //             }
+    //         }
+    //     ]
+    // }
 ]

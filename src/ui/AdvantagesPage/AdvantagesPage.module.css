@@ -24,10 +24,6 @@
     .container {
         min-height: 800px;
     }
-
-    .cards {
-        justify-content: space-around;
-    }
 }
 
 @media screen and (max-width: 600px) {

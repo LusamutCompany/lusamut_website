@@ -33,12 +33,6 @@
     line-height: normal;
 }
 
-
-
-
-
-
-
 @media  screen and (max-width: 768px) {
     .card{
         width: 224px;
@@ -59,7 +53,7 @@
     .description {
         width: 90%;
         height: 50px;
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
@@ -84,13 +78,15 @@
         width: 90%;
         height: 50px;
         font-size: 15px;
+        position: relative;
+        top: -5px;
     }
 }
 
 @media  screen and (max-width: 400px) {
     .card{
         width: 85vw;
-        height: 140px;
+        height: 150px;
         margin-top: 10px;
     }
     .card>img{
@@ -108,5 +104,11 @@
         width: 90%;
         height: 32px;
         font-size: 12px;
+        top: -15px;
+    }
+}
+@media  screen and (max-width: 400px) {
+    .description{
+        font-size: 11px;
     }
 }

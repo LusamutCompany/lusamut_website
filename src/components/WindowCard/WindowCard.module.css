@@ -1,5 +1,6 @@
 .card {
-    min-width: 350px;
+    width: 350px;
+    /* min-width: 350px; */
     height: 350px;
     padding: 20px;
     display: flex;
@@ -7,59 +8,69 @@
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin: auto;
     transition: 150ms ease-in;
 }
+
 .card:hover {
-    min-width: 374px;
+    width: 374px;
     height: 430px;
     padding: 10px;
     justify-content: space-evenly;
     background: #FFF;
     box-shadow: 0px 0px 21.751px 0px rgba(14, 30, 60, 0.12);
 }
-.card:hover .image{
+
+.card:hover .image {
     width: 170px;
     height: 230px;
 }
+
 .card:hover>.title {
     color: #F45D11;
 }
+
 .card:hover>button {
     display: flex;
 }
+
 .card>button:hover {
     background: #DDDDE1;
 }
+
 .card:hover>.properties {
     display: flex;
     opacity: 1;
 }
-.card:hover .windowType{
+
+.card:hover .windowType {
     top: 0px;
 }
 
-.windowType{
+.windowType {
     color: #000;
     font-size: 32px;
     font-weight: lighter;
     position: relative;
-    top: -30px;
+    top: -65px;
     transition: 1.5s;
 }
-.image{
+
+.image {
     transition: 0.5s;
 }
 
 .title {
     color: #868686;
     font-size: 18px;
-    font-weight: 400;
     line-height: 120.2%;
+    font-family: Segoe UI;
+    font-weight: 600;
     letter-spacing: 1.44px;
-    text-transform: uppercase;
     margin-top: 20px;
 }
+
 .card>button {
     display: none;
     justify-content: center;
@@ -72,14 +83,17 @@
     left: 32.5%;
     top: 15px;
 }
-.card>button>span{
+
+.card>button>span {
     color: #83838A;
     font-size: 14px;
     letter-spacing: 0.84px;
 }
-.card>button>img{
+
+.card>button>img {
     display: none;
 }
+
 .properties {
     width: 100%;
     display: flex;
@@ -92,6 +106,7 @@
     opacity: 0;
     transition: 300ms;
 }
+
 .properties>span>p:first-child {
     color: #868686;
     font-family: Segoe UI;
@@ -103,17 +118,19 @@
 }
 
 .selectedCard {
-    min-width: 374px;
+    width: 374px;
     height: 430px;
     background: #FFF;
     box-shadow: 0px 0px 21.751px 0px rgba(14, 30, 60, 0.12);
     padding: 15px;
-    margin-left: 10px;
+    margin: auto;
+    /* margin-left: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .selectedCard>.title {
     color: #F45D11;
 }
@@ -130,25 +147,31 @@
     justify-content: center;
     align-items: center;
 }
-.selectedCard>button>span{
+
+.selectedCard>button>span {
     color: #83838A;
     font-size: 14px;
     letter-spacing: 0.84px;
 }
+
 .selectedCard>button:hover {
     background: #DDDDE1;
 }
-.selectedCard>button>img{
+
+.selectedCard>button>img {
     display: none;
 }
+
 .selectedCard>.properties {
     opacity: 1;
 }
-.selectedCard .windowType{
+
+.selectedCard .windowType {
     top: 0px;
-    color:#F45D11;
+    color: #F45D11;
 }
-.selectedCard .image{
+
+.selectedCard .image {
     width: 170px;
     height: 230px;
 }
@@ -158,66 +181,75 @@
     .card {
         transform: scale(0.8);
     }
-    .selectedCard{
+
+    .selectedCard {
         transform: scale(0.8);
     }
 }
+
 @media screen and (max-width: 1250px) {
-    .card, .selectedCard{
+
+    .card,
+    .selectedCard {
         transform: scale(0.7);
     }
 }
 
-@media screen and (max-width: 740px) {
-    .card button{
+@media screen and (max-width: 770px) {
+    .card button,
+    .selectedCard button {
         width: 35px !important;
         min-height: 35px !important;
     }
-    .card button>span{
+
+    .card button>span,
+    .selectedCard button>span {
         display: none;
     }
-    .card button>img{
+
+    .card button>img,
+    .selectedCard button>img {
         display: block !important;
-    }
-    .selectedCard button{
-        width: 35px !important;
-        min-height: 35px !important;
-    }
-    .selectedCard button>span{
-        display: none;
-    }
-    .selectedCard button>img{
-        display: block;
     }
 }
 
 @media screen and (max-width: 580px) {
-    .card , .selectedCard{
+
+    .card,
+    .selectedCard {
         transform: scale(0.5);
     }
-}  
+}
+
 @media screen and (max-width: 500px) {
-     .card{
+    .card {
         transform: scale(0.7);
         min-height: 420px;
-        margin: auto;
         margin-top: 15%;
-    } 
-     .card:hover{
-        width: 196px;
+    }
+
+    .card:hover {
+        min-width: 196px;
         height: 484px !important;
-    } 
-    .selectedCard{
+    }
+
+    .selectedCard {
         transform: scale(0.7);
-        width: 196px;
-        margin: auto;
+        min-width: 196px;
         min-height: 484px !important;
-    } 
-     .properties{
+    }
+
+    .properties {
         flex-wrap: wrap;
     }
-    .properties>span{
+
+    .properties>span {
         width: 40%;
         margin-top: 20px;
     }
+}
+@media screen and (max-width: 360px) {
+.card, .selectedCard{
+    transform: scale(0.55);
+}
 }
