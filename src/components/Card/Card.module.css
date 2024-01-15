@@ -36,7 +36,7 @@
 @media  screen and (max-width: 768px) {
     .card{
         width: 224px;
-        height: 190px;
+        height: 210px;
         margin-top: 10px;
     }
     .card>img{
@@ -83,10 +83,16 @@
     }
 }
 
+@media screen and (max-width: 478px) {
+    .card {
+        height: 240px;
+    }
+}
+
 @media  screen and (max-width: 400px) {
     .card{
         width: 85vw;
-        height: 150px;
+        height: 160px;
         margin-top: 10px;
     }
     .card>img{

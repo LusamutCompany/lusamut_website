@@ -41,7 +41,7 @@ function Header() {
             <div className={headerStyles.extras}>
                 <div>
                     <div className={headerStyles.contact}>
-                        <a href="tel:+374 33 74 74 74"><p className={headerStyles.phoneNumber}>+374 33 747 474</p></a>
+                        <a href="tel:+374 33 74 74 74"><p className={headerStyles.phoneNumber}>+374 33 74 74 74</p></a>
                         <a href="#contact"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
                     </div>
                 </div>

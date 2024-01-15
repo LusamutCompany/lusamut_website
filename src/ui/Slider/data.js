@@ -12,8 +12,8 @@ import sliderImage10 from "../../assets/jpgs/sliderImage10.jpg"
 export default [
     {
         image: sliderImageMain,
-        title: "մետաղապլաստե դռների և պատուհանների լայն տեսականի",
-        description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով",
+        title: "ՄԵՏԱՂԱՊԼԱՍՏԵ ԵՎ ԱԼՅՈՒՄԻՆԵ ԴՌՆԵՐԻ և ՊԱՏՈՒՀԱՆՆԵՐԻ ԼԱՅՆ ՏԵՍԱԿԱՆԻ",
+        // description: "Էներգախնայող համակարգեր Favorit Space մատչելի գներով",
     },
     {
         image: sliderImage3,

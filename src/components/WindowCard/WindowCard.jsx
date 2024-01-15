@@ -10,7 +10,7 @@ function WindowCard({ image, title, properties, isSelected, index, setSelected,t
             <h1 className={windowCardStyles.title}>{title}</h1>
             <div className={windowCardStyles.properties}>
                 <span>
-                    <p>Մեխանիզմ</p>
+                    <p>Մեխանիզմ / Բռնակ</p>
                     <p>{properties.mechanism}</p>
                 </span>
                 <span>

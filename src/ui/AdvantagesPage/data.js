@@ -1,4 +1,4 @@
-import CalendarIcon from "../../assets/svgs/Calendar Icon.svg"
+import CalendarIcon from "../../assets/svgs/Year Icon.svg"
 import CheckIcon from "../../assets/svgs/Check Icon.svg"
 import EcoIcon from "../../assets/svgs/Eco Icon.svg"
 import GuaranteeIcon from "../../assets/svgs/Guarantee Icon.svg"
@@ -7,32 +7,32 @@ import PrizeIcon from "../../assets/svgs/Prize icon.svg"
 export default [
     {
         image: PrizeIcon,
-        title: "3-րդն աշխարհում",
-        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
+        title: "ԹՈՓ 3-Ը ԱՇԽԱՐՀՈՒՄ",
+        description: "deceuninck-ը PVC համակարգեր արտադրողների լավագույն եռյակում է "
     },
     {
         image: CalendarIcon,
-        title: "85 տարի շուկայում",
-        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
+        title: "87 ՏԱՐԻ ՇՈՒԿԱՅՈՒՄ",
+        description: "deceuninck-ը համաշխարհային շուկայում ունի 87 տարվա փորձ"
     },
     {
         image: CheckIcon,
-        title: "32 հսկիչ պարամետրեր",
-        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
+        title: "ԱՄԵՆԱԲԱՐՁՐ ՑՈՒՑԱՆԻՇԸ",
+        description: "PVC հատկությունները – A+ դասի"
     },
     {
         image: EcoIcon,
-        title: "Էկոլոգիապես մաքուր արտադրանք",
-        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
+        title: "ԷԿՈԼՈԳԻԱՊԵՍ ՄԱՔՈՒՐ",
+        description: "Պրոֆիլները էկոլոգիապես մաքուր են և առողջության համար անվտանգ"
     },
     {
         image: GuaranteeIcon,
-        title: "10 տարվա երաշխիք",
-        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
+        title: "10 ՏԱՐՎԱ ԵՐԱՇԽԻՔ",
+        description: "Մեր կողմից տեղադրված deceuninck ապրանքանիշի դռների և լուսամուտների համար"
     },
     {
         image: MedalIcon,
-        title: "Ամենաբարձր վարկանիշ",
-        description: "Էներգախնայող համակարգեր deceuninck FAVORIT SPACE 76 և deceuninck ECO 60 մատչելի գներով"
+        title: "ՄՐՑԱՆԱԿԱԿԻՐՆԵՐ",
+        description: "«Խնայեք Էներգիան» և «Ինովացիոն Ժամանակը» «Էներգաարդյունավետություն» Կատեգորիայում"
     }
 ]

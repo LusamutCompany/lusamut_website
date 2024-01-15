@@ -84,6 +84,16 @@ function Contact() {
                         </div>
 
                         <div>
+                            <p>Աշխ․ ժամեր</p>
+                            <b><p>Ամեն օր՝ 10։00-20։00</p></b>
+                        </div>
+
+                        <div>
+                            <p>էլ․ հասցեն</p>
+                            <b><p>office@lusamut.am</p></b>
+                        </div>
+
+                        <div>
                             <p>Հեռախոսահամար</p>
                             <b><p>+374 33 74 74 74</p></b>
                         </div>
