@@ -27,20 +27,23 @@
   font-weight: 400;
   line-height: 2;
   font-family: 'Segoe UI';
+  font-size: 15px;
 }
 
 
 .aboutImageContainer {
   height: 630px !important;
   display: flex;
-  justify-content: flex-end;
+}
+.aboutImageContainer img{
+  object-position: center;
 }
 @media screen and (max-width: 1553px) {
   .aboutText>h1 {
     font-size: 55px;
   }
   .aboutText>p {
-    font-size: 15px;
+    font-size: 12.25px;
   }
 }
 
@@ -69,14 +72,14 @@
   }
   .aboutText>p {
     width: 100%;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 160%;
   }
 }
 
 @media screen and (max-width: 800px) {
   .about {
-    height: 600px;
+    height: 720px;
     flex-direction: column-reverse;
   }
   .about>div{
@@ -94,16 +97,13 @@
   }
 
   .aboutText>p {
-    font-size: 14px;
+    font-size: 13.5px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .about {
-    height: 615px;
-  }
-  .aboutImageContainer{
-    width: 100%;
+    height: 715px;
   }
   .aboutText{
     padding: 37px;
@@ -116,14 +116,15 @@
     top: -15px;
   }
   .aboutText>p {
-    font-size: 12px;
+    font-size: 11.5px;
   }
 }
-
+@media screen and (max-width: 500px) {
+.about{
+  height: 800px;
+}
+}
 @media screen and (max-width: 400px) {
-  .aboutImageContainer{
-    height: 264px;
-  }
   .aboutText{
     height: 301px;
     padding: 40px;
@@ -138,8 +139,9 @@
   }
   .aboutText>p{
     line-height: 1.5;
+    font-size: 10px;
   }
   .aboutImageContainer{
-    height: 164px !important;
+    height: 224px !important;
   }
 }
