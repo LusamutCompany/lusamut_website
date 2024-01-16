@@ -27,37 +27,7 @@ export default [
         image: sliderImage4,
     },
     {
-        image: sliderImage13,
-    },
-    {
         image: sliderImage16,
-    },
-    {
-        image: sliderImage5,
-    },
-    {
-        image: sliderImage6,
-    },
-    {
-        image: sliderImage7,
-    },
-    {
-        image: sliderImage8,
-    },
-    {
-        image: sliderImage9,
-    },
-    {
-        image: sliderImage10,
-    },
-    {
-        image: sliderImage11,
-    },
-    {
-        image: sliderImage12,
-    },
-    {
-        image: sliderImage14,
     },
     {
         image: sliderImage15,
@@ -65,4 +35,34 @@ export default [
     {
         image: sliderImage2,
     },
+    {
+        image: sliderImage6,
+    },
+    {
+        image: sliderImage9,
+    },
+    {
+        image: sliderImage14,
+    },
+    {
+        image: sliderImage10,
+    },
+    {
+        image: sliderImage13,
+    },
+    {
+        image: sliderImage5,
+    },
+    {
+        image: sliderImage11,
+    },
+    {
+        image: sliderImage7,
+    },
+    {
+        image: sliderImage12,
+    },
+    {
+        image: sliderImage8,
+    }
 ]
