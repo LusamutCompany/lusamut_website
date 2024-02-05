@@ -1,4 +1,4 @@
-import { useRef, useState } from "react"
+import { useRef } from "react"
 import pages from "./data"
 import sliderStyles from "./Slider.module.css"
 import "slick-carousel/slick/slick.css";
@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import SlickSlider from "react-slick";
 
 function Slider() {
-    const [index, setIndex] = useState(0)
     const sliderRef = useRef(null)
     const settings = {
         dots: true,
@@ -42,11 +41,6 @@ function Slider() {
                         </div>)
                 })}
             </SlickSlider>
-            {/* <div className={sliderStyles.pager}>
-                {pages.map((pageItem, i) => {
-                    return <div key={i} style={{ opacity: i === index ? 0.8 : 0.5 }}></div>
-                })}
-            </div> */}
         </div>
     )
 }

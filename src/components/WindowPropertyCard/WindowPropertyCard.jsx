@@ -1,8 +1,7 @@
 import windowStyles from "../WindowPropertyCard/WindowPropertyCard.module.css"
-// model,title,price,info
 function WindowPropertyCard({ image, width, height, props1, props2 }) {
     return (
-        <div className={windowStyles.card} onClick={(e) => { e.preventDefault() }}>
+        <div className={windowStyles.card}>
             <img src={image} width={width} height={height}/>
             <div className={windowStyles.properties}>
                 <div>

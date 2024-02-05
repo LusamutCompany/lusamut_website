@@ -2,6 +2,7 @@
   width: 100%;
   height: 630px;
   overflow: hidden;
+  position: relative;
 }
 .about {
   width: 100%;
@@ -38,6 +39,14 @@
 .aboutImageContainer img{
   object-position: center;
 }
+
+.link{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
 @media screen and (max-width: 1553px) {
   .aboutText>h1 {
     font-size: 55px;

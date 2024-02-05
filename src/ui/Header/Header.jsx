@@ -6,16 +6,16 @@ import menuIcon from "../../assets/svgs/Menu.svg"
 import closeMenuIcon from "../../assets/svgs/closeMenu.svg"
 import { useState } from "react"
 
-function Header() {
-    let [isOpen, setIsOpen] = useState(false)
-    let [openedPage, setOpenedPage] = useState(0)
-    let openMenu = () => {
+function Header({state}) {
+    const [openedPage,setOpenedPage] = state 
+    const [isOpen, setIsOpen] = useState(false)
+    const openMenu = () => {
         setIsOpen(true)
     }
-    let closeMenu = () => {
+    const closeMenu = () => {
         setIsOpen(false)
     }
-    let pages = [
+    const pages = [
         ["ԳԼԽԱՎՈՐ", "#home"],
         ["ԱՌԱՎԵԼՈՒԹՅՈՒՆՆԵՐ", "#advantages"],
         ["ՏԵՍԱԿԱՆԻ", "#store"],

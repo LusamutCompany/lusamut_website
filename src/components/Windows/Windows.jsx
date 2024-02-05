@@ -33,14 +33,12 @@ function Windows({ selected, setSelected, windowCards, styles }) {
             }
         ]
     };
-    const moveLeft = (e) => {
-        e.preventDefault()
-        sliderRef.current.slickPrev()
-    }
-    const moveRight = (e) => {
-        e.preventDefault()
-        sliderRef.current.slickNext()
-    }
+    // const moveLeft = () => {
+    //     sliderRef.current.slickPrev()
+    // }
+    // const moveRight = () => {
+    //     sliderRef.current.slickNext()
+    // }
     return (
         <div className={styles.windows}>
             <div className={styles.absoluteBackground}></div>
@@ -49,23 +47,23 @@ function Windows({ selected, setSelected, windowCards, styles }) {
                 <div className="arrow arrow2" onClick={moveRight}></div>
             </div> */}
             <div>
-            <SlickSlider {...settings} ref={sliderRef} className={styles.slider}>
-                {
-                    windowCards.map((item, index) => {
-                        return (
-                            <WindowCard
-                                type={item.type}
-                                key={index}
-                                image={item.image}
-                                title={item.title}
-                                properties={item.properties}
-                                isSelected={index === selected ? true : false}
-                                index={index}
-                                setSelected={setSelected} />
-                        )
-                    })
-                }
-            </SlickSlider>
+                <SlickSlider {...settings} ref={sliderRef} className={styles.slider}>
+                    {
+                        windowCards.map((item, index) => {
+                            return (
+                                <WindowCard
+                                    type={item.type}
+                                    key={index}
+                                    image={item.image}
+                                    title={item.title}
+                                    properties={item.properties}
+                                    isSelected={index === selected ? true : false}
+                                    index={index}
+                                    setSelected={setSelected} />
+                            )
+                        })
+                    }
+                </SlickSlider>
             </div>
         </div>
     )

@@ -8,7 +8,6 @@
 html {
   scroll-behavior: smooth;
   scroll-padding: 125px;
-  /* overflow-x: hidden; */
 }
 
 button {
@@ -67,74 +66,91 @@ button {
   transform: rotateZ(-45deg);
 }
 
-#about>.arrows, #store .arrows{
+#about>.arrows,
+#store .arrows {
   width: 95%;
   height: 630px;
   margin: auto;
   margin-top: 0;
 }
-#about .arrow, #store .arrow{
+
+#about .arrow,
+#store .arrow {
   border-color: black;
 }
-#about .arrow:active{
+
+#about .arrow:active {
   border-color: white;
 }
-#store .arrows{
+
+#store .arrows {
   height: 25%;
 }
-#home .slick-dots{
+
+#home .slick-dots {
   width: auto;
   margin-left: 0;
   top: calc(100vh - 160px);
   left: 7%;
 }
-#home .slick-dots li{
-    width: 20px;
-    min-height: 20px;
-    background: white;
-    clip-path: polygon(25% 25%, 50% 10%, 75% 25%, 75% 75%, 25% 75%);
-    transform: scale(2);
-    opacity: 0.5;
+
+#home .slick-dots li {
+  width: 20px;
+  min-height: 20px;
+  background: white;
+  clip-path: polygon(25% 25%, 50% 10%, 75% 25%, 75% 75%, 25% 75%);
+  transform: scale(2);
+  opacity: 0.5;
 }
-#home ul .slick-active{
+
+#home ul .slick-active {
   opacity: 0.8;
 }
-#home .slick-dots button::before{
+
+#home .slick-dots button::before {
   content: "";
 }
+
 @media screen and (max-width: 1060px) {
   html {
     scroll-padding: 88px;
   }
-  #home .slick-dots{
+
+  #home .slick-dots {
     top: calc(100vh - 123px);
   }
 }
+
 @media screen and (max-width: 1024px) {
   .arrows {
     display: none;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .title {
     font-size: 45px;
     letter-spacing: 1.04px;
   }
 }
+
 @media only screen and (max-width: 680px) {
-  #home .slick-dots{
+  #home .slick-dots {
     top: calc(70vh - 155px);
   }
-  #home .slick-dots li{
+
+  #home .slick-dots li {
     transform: scale(1.3);
   }
 }
+
 @media only screen and (max-width: 600px) {
   .title {
     font-size: 32px;
     letter-spacing: 1.04px;
   }
 }
+
 @media only screen and (max-width: 400px) {
   .title {
     font-size: 26px;

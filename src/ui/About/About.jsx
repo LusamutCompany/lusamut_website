@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SlickSlider from "react-slick";
 
-function About() {
+function About({ state }) {
   const aboutRef = useRef(null)
   const [index, setIndex] = useState(0)
   const sliderRef = useRef(null)
@@ -21,44 +21,41 @@ function About() {
     // cssEase: "linear",
     pauseOnHover: true,
   };
-  const moveLeft = (e) => {
-    e.preventDefault()
+  const moveLeft = () => {
     sliderRef.current.slickPrev()
   }
-  const moveRight = (e) => {
-    e.preventDefault()
+  const moveRight = () => {
     sliderRef.current.slickNext()
   }
   return (
-    <a href="#contact" className="toDownLInk">
-      <div className={aboutStyles.aboutContainer} id="about" ref={aboutRef}>
-        <div className="arrows">
-          <div className="arrow" onClick={moveLeft}></div>
-          <div className="arrow arrow2" onClick={moveRight}></div>
-        </div>
-        <SlickSlider {...settings} ref={sliderRef}>
-          {pages.map((page, i) => {
-            return (
-              <div className={aboutStyles.about} key={i}>
-                <div className={aboutStyles.aboutText}>
-                  <h1 className="title">{page.title}</h1>
-                  <p>
-                    {page.text}
-                  </p>
-                  <br />
-                  <p>
-                    {page.text2}
-                  </p>
-                </div>
-                <div className={aboutStyles.aboutImageContainer}>
-                  <img className={aboutStyles.companyAbout} src={page.image} height="100%" width="100%"/>
-                </div>
-              </div>
-            )
-          })}
-        </SlickSlider>
+    <div className={aboutStyles.aboutContainer} id="about" ref={aboutRef}>
+      <a className={aboutStyles.link + " toDownLInk"} href="#contact" onClick={() => { state[1](4) }}></a>
+      <div className="arrows">
+        <div className="arrow" onClick={moveLeft}></div>
+        <div className="arrow arrow2" onClick={moveRight}></div>
       </div>
-    </a>
+      <SlickSlider {...settings} ref={sliderRef}>
+        {pages.map((page, i) => {
+          return (
+            <div className={aboutStyles.about} key={i}>
+              <div className={aboutStyles.aboutText}>
+                <h1 className="title">{page.title}</h1>
+                <p>
+                  {page.text}
+                </p>
+                <br />
+                <p>
+                  {page.text2}
+                </p>
+              </div>
+              <div className={aboutStyles.aboutImageContainer}>
+                <img className={aboutStyles.companyAbout} src={page.image} height="100%" width="100%" />
+              </div>
+            </div>
+          )
+        })}
+      </SlickSlider>
+    </div>
   )
 }
 export default About
