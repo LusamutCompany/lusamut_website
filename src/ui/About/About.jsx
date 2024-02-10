@@ -29,32 +29,33 @@ function About({ state }) {
   }
   return (
     <div className={aboutStyles.aboutContainer} id="about" ref={aboutRef}>
-      <a className={aboutStyles.link + " toDownLInk"} href="#contact" onClick={() => { state[1](4) }}></a>
       <div className="arrows">
         <div className="arrow" onClick={moveLeft}></div>
         <div className="arrow arrow2" onClick={moveRight}></div>
       </div>
-      <SlickSlider {...settings} ref={sliderRef}>
-        {pages.map((page, i) => {
-          return (
-            <div className={aboutStyles.about} key={i}>
-              <div className={aboutStyles.aboutText}>
-                <h1 className="title">{page.title}</h1>
-                <p>
-                  {page.text}
-                </p>
-                <br />
-                <p>
-                  {page.text2}
-                </p>
+      <a className={aboutStyles.link} href="#contact" onClick={() => { state[1](4) }}>
+        <SlickSlider {...settings} ref={sliderRef}>
+          {pages.map((page, i) => {
+            return (
+              <div className={aboutStyles.about} key={i}>
+                <div className={aboutStyles.aboutText}>
+                  <h1 className="title">{page.title}</h1>
+                  <p>
+                    {page.text}
+                  </p>
+                  <br />
+                  <p>
+                    {page.text2}
+                  </p>
+                </div>
+                <div className={aboutStyles.aboutImageContainer}>
+                  <img className={aboutStyles.companyAbout} src={page.image} height="100%" width="100%" />
+                </div>
               </div>
-              <div className={aboutStyles.aboutImageContainer}>
-                <img className={aboutStyles.companyAbout} src={page.image} height="100%" width="100%" />
-              </div>
-            </div>
-          )
-        })}
-      </SlickSlider>
+            )
+          })}
+        </SlickSlider>
+      </a>
     </div>
   )
 }
