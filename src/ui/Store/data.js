@@ -23,7 +23,6 @@ export default [
                 width: "240px",
                 height: "260px",
                 prop1: {
-                    model: "ALD71-0000",
                     title: "Սպիտակ",
                     price: "57 600",
                     info: "Ապառիկ 6 ամսով 0% ",
@@ -31,7 +30,6 @@ export default [
 
                 },
                 prop2: {
-                    model: "BLD71-0000",
                     title: "Lամինացված",
                     price: "71 500",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -43,7 +41,6 @@ export default [
                 width: "240px",
                 height: "260px",
                 prop1: {
-                    model: "ALD72-0000",
                     title: "Սպիտակ",
                     price: "55 100",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -51,7 +48,6 @@ export default [
 
                 },
                 prop2: {
-                    model: "BLD72-0000",
                     title: "Lամինացված",
                     price: "68 100",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -63,14 +59,12 @@ export default [
                 width: "280px",
                 height: "216px",
                 prop1: {
-                    model: "ALD73-0000",
                     title: "Սպիտակ",
                     price: "51 200",
                     info: "Ապառիկ 6 ամսով 0%",
                     info2: "8 533"
                 },
                 prop2: {
-                    model: "BLD73-0000",
                     title: "Lամինացված",
                     price: "63 100",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -82,14 +76,12 @@ export default [
                 width: "280px",
                 height: "216px",
                 prop1: {
-                    model: "ALD74-0000",
                     title: "Սպիտակ",
                     price: "62 500",
                     info: "Ապառիկ 6 ամսով 0%",
                     info2: "10 416"
                 },
                 prop2: {
-                    model: "BLD74-0000",
                     title: "Lամինացված",
                     price: "76 900",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -114,7 +106,6 @@ export default [
                 width: "240px",
                 height: "260px",
                 prop1: {
-                    model: "ALD61-0000",
                     title: "Սպիտակ",
                     price: "45 700",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -122,7 +113,6 @@ export default [
 
                 },
                 prop2: {
-                    model: "BLD61-0000",
                     title: "Lամինացված",
                     price: "55 700",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -134,14 +124,12 @@ export default [
                 width: "240px",
                 height: "260px",
                 prop1: {
-                    model: "ALD62-0000",
                     title: "Սպիտակ",
                     price: "43 800",
                     info: "Ապառիկ 6 ամսով 0%",
                     info2: "7 300"
                 },
                 prop2: {
-                    model: "BLD62-0000",
                     title: "Lամինացված",
                     price: "53 100",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -153,14 +141,12 @@ export default [
                 width: "280px",
                 height: "216px",
                 prop1: {
-                    model: "ALD63-0000",
                     title: "Սպիտակ",
                     price: "39 900",
                     info: "Ապառիկ 6 ամսով 0%",
                     info2: "6 650"
                 },
                 prop2: {
-                    model: "BLD63-0000",
                     title: "Lամինացված",
                     price: "49 100",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -172,14 +158,12 @@ export default [
                 width: "280px",
                 height: "216px",
                 prop1: {
-                    model: "ALD64-0000",
                     title: "Սպիտակ",
                     price: "49 900",
                     info: "Ապառիկ 6 ամսով 0%",
                     info2: "8 316"
                 },
                 prop2: {
-                    model: "BLD64-0000",
                     title: "Lամինացված",
                     price: "60 500",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -204,14 +188,12 @@ export default [
                 width: "240px",
                 height: "260px",
                 prop1: {
-                    model: "ALK51-0000",
                     title: "Սպիտակ",
                     price: "46 100",
                     info: "Ապառիկ 6 ամսով 0%",
                     info2: "7 683"
                 },
                 prop2: {
-                    model: "BLK51-0000",
                     title: "Lամինացված",
                     price: "52 300",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -223,14 +205,12 @@ export default [
                 width: "240px",
                 height: "260px",
                 prop1: {
-                    model: "ALK52-0000",
                     title: "Սպիտակ",
                     price: "44 200",
                     info: "Ապառիկ 6 ամսով 0%",
                     info2: "7 366"
                 },
                 prop2: {
-                    model: "BLK52-0000",
                     title: "Lամինացված",
                     price: "49 900",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -242,14 +222,12 @@ export default [
                 width: "280px",
                 height: "216px",
                 prop1: {
-                    model: "ALK53-0000",
                     title: "Սպիտակ",
                     price: "40 900",
                     info: "Ապառիկ 6 ամսով 0%",
                     info2: "6 816"
                 },
                 prop2: {
-                    model: "BLK53-0000",
                     title: "Lամինացված",
                     price: "45 900",
                     info: "Ապառիկ 6 ամսով 0%",
@@ -261,14 +239,12 @@ export default [
                 width: "280px",
                 height: "216px",
                 prop1: {
-                    model: "ALK54-0000",
                     title: "Սպիտակ",
                     price: "50 200",
                     info: "Ապառիկ 6 ամսով 0%",
                     info2: "8 366"
                 },
                 prop2: {
-                    model: "BLK54-0000",
                     title: "Lամինացված",
                     price: "56 800",
                     info: "Ապառիկ 6 ամսով 0%",
