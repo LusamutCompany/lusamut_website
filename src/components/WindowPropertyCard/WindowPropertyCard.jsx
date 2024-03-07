@@ -2,9 +2,7 @@ import windowStyles from "../WindowPropertyCard/WindowPropertyCard.module.css"
 function WindowPropertyCard({ image, width, height, props1, props2 }) {
     return (
         <div className={windowStyles.card}>
-            <div className={windowStyles.imageCont}>
-                <img src={image} width={width} height={height}/>
-            </div>
+            <img src={image} width={width} height={height} />
             <div className={windowStyles.properties}>
                 <div>
                     <h1 className={windowStyles.title}>{props1.title}  մ<sup>2</sup> </h1>

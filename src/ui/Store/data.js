@@ -5,7 +5,6 @@ import windowPropImage from "../../assets/pngs/windowPropImg.png"
 import windowPropImage2 from "../../assets/pngs/windowPropImg2.png"
 import windowPropImage3 from "../../assets/pngs/windowPropImg3.png"
 import windowPropImage4 from "../../assets/pngs/windowPropImg4.png"
-import windowPropImage5 from "../../assets/pngs/windowPropImg5.png"
 export default [
     {
         type: "Լուսամուտ",
