@@ -41,14 +41,14 @@ function Header({state}) {
             <div className={headerStyles.extras}>
                 <div>
                     <div className={headerStyles.contact}>
-                        <a href="tel:+374 33 74 74 74"><p className={headerStyles.phoneNumber}>+374 33 74 74 74</p></a>
+                        <a href="tel:+37433747474"><p className={headerStyles.phoneNumber}>+374 33 74 74 74</p></a>
                         <a href="#contact"><button className={headerStyles.contactButton}>ԿԱՊՎԵԼ</button></a>
                     </div>
                 </div>
             </div>
             <div className={headerStyles.mobileHeader}>
                 <a href="https://www.instagram.com/lusamut_am/" target="_blank"><img src={instagramIcon} alt="" width="32px" height="32px" /></a>
-                <a href="tel:+37498123456"><img src={callIcon} alt="" width="32px" height="32px" /></a>
+                <a href="tel:+37433747474"><img src={callIcon} alt="" width="32px" height="32px" /></a>
                 <img src={menuIcon} alt="" width="32px" height="32px" onClick={openMenu} />
             </div>
             {isOpen ? (
