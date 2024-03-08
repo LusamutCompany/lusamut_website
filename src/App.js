@@ -8,6 +8,7 @@ import { useState } from "react";
 
 function App() {
   const state = useState(0)
+  alert(1)
   return (
     <div className="container">
       <Header state={state} />

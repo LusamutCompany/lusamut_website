@@ -82,7 +82,13 @@
         top: -5px;
     }
 }
-
+@media  screen and (max-width: 500px) {
+    .description {
+        width: 90%;
+        font-size: 13px;
+        top: -5px;
+    }
+}
 @media  screen and (max-width: 400px) {
     .card{
         width: 85vw;
