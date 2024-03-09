@@ -156,4 +156,11 @@ button {
     font-size: 26px;
     letter-spacing: 1.04px;
   }
+  #home .slick-dots {
+    left: 9%;
+  }
+  #home .slick-dots li {
+    transform: scale(1.1);
+    margin-left: -10px;
+  }
 }

@@ -16,6 +16,14 @@ function Slider() {
         speed: 1000,
         autoplaySpeed: 5000,
         pauseOnHover: false,
+        responsive: [
+            {
+                breakPoints: 600,
+                settings: {
+                    speed: 500,
+                }
+            }
+        ]
     };
     const moveLeft = () => {
         sliderRef.current.slickPrev()

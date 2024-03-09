@@ -79,4 +79,7 @@
     .absoluteBackground {
         height: 160px;
     }
+    .store>h1 {
+        padding-left: 40px;
+    }
 }
